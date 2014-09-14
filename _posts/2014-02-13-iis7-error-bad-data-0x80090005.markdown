@@ -1,0 +1,49 @@
+---
+layout: post
+status: publish
+published: true
+title: 'IIS7 Error: Bad Data 0x80090005'
+author:
+  display_name: aaronzh
+  login: wdadmin
+  email: webdebug.net@gmail.com
+  url: ''
+author_login: wdadmin
+author_email: webdebug.net@gmail.com
+wordpress_id: 475
+wordpress_url: http://webdebug.net/?p=475
+date: '2014-02-13 03:42:10 +0800'
+date_gmt: '2014-02-13 03:42:10 +0800'
+categories:
+- IIS
+tags:
+- IIS7
+- Bad Data
+- '0x80090005'
+comments: []
+---
+<p><a href="http:&#47;&#47;webdebug.net&#47;wp-content&#47;uploads&#47;2014&#47;02&#47;app-pool-error.jpg"><img class="alignright size-full wp-image-491" alt="app pool error" src="http:&#47;&#47;webdebug.net&#47;wp-content&#47;uploads&#47;2014&#47;02&#47;app-pool-error.jpg" width="344" height="177" &#47;><&#47;a>When you try to change the application pool identity to another domain account or reset the password for that account. You type in the username and password and hit OK and you will get the following error message</p>
+<p><strong>There was an error while performing this operation.<&#47;strong></p>
+<p><strong>Details: Bad Data. (Exception from HRESULT: 0x80090005)<&#47;strong></p>
+<p>Usually this is caused by Xcopy the applicationHost.config from one server to another. And on original server you changed the application pool identity to a custom identity. (Advanced Settings > Application Pool Identity > Custom Account).</p>
+<p>Initially when you set the application pool identity to a domain account IIS has to keep a local copy of the username and password. So it stores a copy in its applicationHost.config with password encrypted. For the encryption it uses machine specific keys in the iisConfiguration and iisWasKey containers. When the applicationHost.config is moved to a different server IIS can no longer decrypt the settings.</p>
+<p>If you still have the original server available, then the following resolution can be applied,</p>
+<ul>
+<li>To get this working you can export and import the keys from the original server.<&#47;li>
+<li>Export using the following commands<&#47;li><br />
+<&#47;ul></p>
+<blockquote>
+<p style="text-align: left;"><strong>aspnet_regiis -px "iisConfigurationKey" "D:\iisConfigurationKey.xml" -pri<br />
+aspnet_regiis -px "iisWasKey" "D:\iisWasKey.xml" -pri<&#47;strong><&#47;p><br />
+<&#47;blockquote></p>
+<ul>
+<li>And for the import use<&#47;li><br />
+<&#47;ul></p>
+<blockquote><p><strong>aspnet_regiis -pi "iisConfigurationKey" "D:\iisConfigurationKey.xml"<br />
+aspnet_regiis -pi "iisWasKey" "D:\iisWasKey.xml"<&#47;strong><&#47;blockquote><br />
+If original server is not available, there are two options,</p>
+<ul>
+<li>Reinstall IIS and WAS<&#47;li>
+<li>Create a support case to Microsoft to manually generates the waskey and fix the applicationHost.config.<&#47;li><br />
+<&#47;ul><br />
+Reference: <a title="http:&#47;&#47;blogs.msdn.com&#47;b&#47;vijaysk&#47;archive&#47;2009&#47;03&#47;14&#47;caution-while-xcopying-iis-7-0-config-files.aspx" href="http:&#47;&#47;blogs.msdn.com&#47;b&#47;vijaysk&#47;archive&#47;2009&#47;03&#47;14&#47;caution-while-xcopying-iis-7-0-config-files.aspx" target="_blank">http:&#47;&#47;blogs.msdn.com&#47;b&#47;vijaysk&#47;archive&#47;2009&#47;03&#47;14&#47;caution-while-xcopying-iis-7-0-config-files.aspx<&#47;a></p>
