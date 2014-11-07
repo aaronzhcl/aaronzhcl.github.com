@@ -24,13 +24,13 @@ tags:
 - Crash
 comments: []
 ---
-<p>1. Download and then install the <strong>DebugDiag<&#47;strong> from <a href="http:&#47;&#47;www.microsoft.com&#47;download&#47;en&#47;details.aspx?id=26798">http:&#47;&#47;www.microsoft.com&#47;download&#47;en&#47;details.aspx?id=26798<&#47;a><br />
-2. Run <strong>DebugDiag Tool 1.2<&#47;strong> and click <strong>Add Rule<&#47;strong> button.<br />
-3. Select <strong>Crash<&#47;strong> and click <strong>Next<&#47;strong>.<br />
-4. Choose <strong>A specific IIS web application pool<&#47;strong> and click <strong>Next<&#47;strong>.<br />
+<p>1. Download and then install the <strong>DebugDiag</strong> from <a href="http://www.microsoft.com/download/en/details.aspx?id=26798">http://www.microsoft.com/download/en/details.aspx?id=26798</a><br />
+2. Run <strong>DebugDiag Tool 1.2</strong> and click <strong>Add Rule</strong> button.<br />
+3. Select <strong>Crash</strong> and click <strong>Next</strong>.<br />
+4. Choose <strong>A specific IIS web application pool</strong> and click <strong>Next</strong>.<br />
 5. Choose the application pool which is crashing.<br />
-6. Click <strong>Next<&#47;strong> in <strong>Advanced Configuration<&#47;strong> (Optional), click on <strong>Breakpoints<&#47;strong> and then click on <strong>Add Breakpoint.<&#47;strong><br />
-7. Choose <strong>Ntdll!ZwTerminateProcess<&#47;strong> from the list and change the<strong> Action Type<&#47;strong> to <strong>Full User Dump<&#47;strong> and<strong> Action Limit<&#47;strong> to <strong>5<&#47;strong> and click <strong>OK<&#47;strong>.<br />
-8. Click on <strong>Save<&#47;strong> and <strong>Close.<&#47;strong><br />
-9. Click next and name your rule and specify the <strong>UserDump locations<&#47;strong>.<br />
-10. Select <strong>Activate the rule now<&#47;strong>.</p>
+6. Click <strong>Next</strong> in <strong>Advanced Configuration</strong> (Optional), click on <strong>Breakpoints</strong> and then click on <strong>Add Breakpoint.</strong><br />
+7. Choose <strong>Ntdll!ZwTerminateProcess</strong> from the list and change the<strong> Action Type</strong> to <strong>Full User Dump</strong> and<strong> Action Limit</strong> to <strong>5</strong> and click <strong>OK</strong>.<br />
+8. Click on <strong>Save</strong> and <strong>Close.</strong><br />
+9. Click next and name your rule and specify the <strong>UserDump locations</strong>.<br />
+10. Select <strong>Activate the rule now</strong>.</p>

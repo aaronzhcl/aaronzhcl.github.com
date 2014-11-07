@@ -50,7 +50,7 @@ comments:
   content: "Why viewers still make use of to read news papers when in this technological
     globe all is \r\npresented on web?"
 - id: 8931
-  author: http:&#47;&#47;endurabletyro77263330.pen.io&#47;
+  author: http://endurabletyro77263330.pen.io/
   author_email: jonellepinschof@googlemail.com
   author_url: ''
   date: '2014-06-01 11:54:06 +0800'
@@ -73,8 +73,8 @@ comments:
   date_gmt: '2014-06-14 22:44:15 +0800'
   content: "Hello, this weekend is nice designed for me, since this time \r\ni am
     reading this enormous informative post here at my home.\r\n\r\n\r\n\r\nMy blog
-    post - <a href=\"http:&#47;&#47;leatherjourney.org&#47;users.php?mode=profile&amp;uid=146927\"
-    rel=\"nofollow\">book download<&#47;a>"
+    post - <a href=\"http://leatherjourney.org/users.php?mode=profile&amp;uid=146927\"
+    rel=\"nofollow\">book download</a>"
 - id: 11628
   author: Petit Livre de - L'anglais en 5 minutes par jour pdf
   author_email: marie.tibbs@gmail.com
@@ -83,8 +83,8 @@ comments:
   date_gmt: '2014-06-18 06:37:12 +0800'
   content: "Good site you have here.. It's hard to find high-quality writing like
     yours nowadays.\r\n\r\nI seriously appreciate people like you! Take care!!\r\n\r\n\r\nMy
-    webpage :: <a href=\"http:&#47;&#47;pkadeluigi.soup.io\" rel=\"nofollow\">Petit
-    Livre de - L'anglais en 5 minutes par jour pdf<&#47;a>"
+    webpage :: <a href=\"http://pkadeluigi.soup.io\" rel=\"nofollow\">Petit
+    Livre de - L'anglais en 5 minutes par jour pdf</a>"
 - id: 12851
   author: sodomisatrice
   author_email: glenna_zambrano@gmail.com
@@ -100,8 +100,8 @@ comments:
   date_gmt: '2014-06-29 17:43:43 +0800'
   content: "Thajk you for sharing your info. I truly appreciate your efforts and I
     will be \r\nwaiting for your next write ups thank you once again.\r\n\r\nHerre
-    iss my web-site: <a href=\"https:&#47;&#47;flattr.com&#47;profile&#47;virgilioneagle\"
-    rel=\"nofollow\">local green energy<&#47;a>"
+    iss my web-site: <a href=\"https://flattr.com/profile/virgilioneagle\"
+    rel=\"nofollow\">local green energy</a>"
 - id: 13861
   author: homes adelaide
   author_email: agnesgagnon@yahoo.de
@@ -111,8 +111,8 @@ comments:
   content: "Howdy! I could have sworn I've been to this web sute before but after
     browsing through a few of thee posts I realized it's new to me.\r\nRegardless,
     I'm certainly happy I came across it and I'll be bookmarking it and checking back
-    regularly!\r\n\r\n\r\nCheck out my weblog ... <a href=\"http:&#47;&#47;profundidadedecampo.tumblr.com&#47;\"
-    rel=\"nofollow\">homes adelaide<&#47;a>"
+    regularly!\r\n\r\n\r\nCheck out my weblog ... <a href=\"http://profundidadedecampo.tumblr.com/\"
+    rel=\"nofollow\">homes adelaide</a>"
 - id: 19273
   author: affordable dentures tampa florida
   author_email: noreenmarch@care2.com
@@ -120,10 +120,10 @@ comments:
   date: '2014-08-06 09:23:55 +0800'
   date_gmt: '2014-08-06 09:23:55 +0800'
   content: "I am in fact thankful to the holder of this site who has shared this \r\ngreat
-    piece of writing at at this time.\r\n\r\nmy homepage; <a href=\"https:&#47;&#47;www.youtube.com&#47;watch?v=01AqvomcmV8\"
-    rel=\"nofollow\">affordable dentures tampa florida<&#47;a>"
+    piece of writing at at this time.\r\n\r\nmy homepage; <a href=\"https://www.youtube.com/watch?v=01AqvomcmV8\"
+    rel=\"nofollow\">affordable dentures tampa florida</a>"
 - id: 20292
-  author: http:&#47;&#47;Www.0Dl.biz&#47;
+  author: http://Www.0Dl.biz/
   author_email: ellisseabrook@gmail.com
   author_url: http://Www.0Dl.biz/
   date: '2014-08-15 07:55:25 +0800'
@@ -148,18 +148,18 @@ comments:
     the favor?.I'm attempting to to find things to improve my website!I suppose its
     good enough to make use of some of your concepts!!
 ---
-<p><a href="http:&#47;&#47;support.microsoft.com&#47;kb&#47;177415" target="_blank"><strong>How to use Memory Pool Monitor (Poolmon.exe) to troubleshoot kernel mode memory leaks<&#47;strong><&#47;a></p>
+<p><a href="http://support.microsoft.com/kb/177415" target="_blank"><strong>How to use Memory Pool Monitor (Poolmon.exe) to troubleshoot kernel mode memory leaks</strong></a></p>
 <p>This article describes how to use the Memory Pool Monitor utility, Poolmon.exe, as a troubleshooting tool to monitor memory tags.</p>
 <p>Poolmon displays data that the operating system collects about memory allocations from the system paged and nonpaged kernel pools and about the memory pools used for Terminal Services sessions. The data is grouped by pool allocation tag. This information can be used by Microsoft Technical Support to find kernel mode memory leaks.</p>
 <p>A memory leak is caused by an application or by a process that allocates memory for use but that does not free the memory when the application or process finishes. Therefore, available memory is completely used over time. Frequently, this condition causes the system to stop functioning correctly.</p>
 <p><code>In this case, the following events may be logged in the System log:<br />
 Event ID: 2020<br />
 Source: Srv<br />
-Description: The server was unable to allocate from the system paged pool because the pool was empty.<&#47;code></p>
+Description: The server was unable to allocate from the system paged pool because the pool was empty.</code></p>
 <p><code>Event ID: 2019<br />
 Source: Srv<br />
-Description: The server was unable to allocate from the system nonpaged pool because the pool was empty.<&#47;code></p>
-<p>In <strong>httperror<&#47;strong> log, there will be <strong>Connections_Refused<&#47;strong> errors which makes the websites stop to accept new connections. This usually indicates the kernel NonPagedPool memory has dropped below 20MB and http.sys has stopped receiving new connections.</p>
-<p><a href="http:&#47;&#47;support.microsoft.com&#47;kb&#47;298102" target="_blank"><strong>How to find pool tags that are used by third-party drivers<&#47;strong><&#47;a></p>
+Description: The server was unable to allocate from the system nonpaged pool because the pool was empty.</code></p>
+<p>In <strong>httperror</strong> log, there will be <strong>Connections_Refused</strong> errors which makes the websites stop to accept new connections. This usually indicates the kernel NonPagedPool memory has dropped below 20MB and http.sys has stopped receiving new connections.</p>
+<p><a href="http://support.microsoft.com/kb/298102" target="_blank"><strong>How to find pool tags that are used by third-party drivers</strong></a></p>
 <p>This article describes how to find the source of a pool tag that is used by a third-party driver. This may be useful because when you troubleshoot an issue, you may encounter a pool tag that cannot be tied to a Microsoft component, and finding the source of these tags can be complicated and is often impossible without the use of a kernel-mode debugger.</p>
-<p><a href="http:&#47;&#47;msdn.microsoft.com&#47;en-us&#47;windows&#47;hardware&#47;gg463213" target="_blank"><strong>Who's Using the Pool?<&#47;strong><&#47;a></p>
+<p><a href="http://msdn.microsoft.com/en-us/windows/hardware/gg463213" target="_blank"><strong>Who's Using the Pool?</strong></a></p>

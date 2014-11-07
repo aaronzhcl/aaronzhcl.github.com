@@ -24,10 +24,10 @@ tags:
 - network
 comments: []
 ---
-<p>1. Download and install <strong>Network Monitor<&#47;strong> from <a href="http:&#47;&#47;www.microsoft.com&#47;download&#47;en&#47;details.aspx?id=4865">http:&#47;&#47;www.microsoft.com&#47;download&#47;en&#47;details.aspx?id=4865<&#47;a>.<br />
-2. Open <strong>Network Monitor<&#47;strong> ans select <strong>File<&#47;strong> - <strong>New Capture<&#47;strong><br />
-3. Click the <strong>Start<&#47;strong> button to start tracing.<br />
+<p>1. Download and install <strong>Network Monitor</strong> from <a href="http://www.microsoft.com/download/en/details.aspx?id=4865">http://www.microsoft.com/download/en/details.aspx?id=4865</a>.<br />
+2. Open <strong>Network Monitor</strong> ans select <strong>File</strong> - <strong>New Capture</strong><br />
+3. Click the <strong>Start</strong> button to start tracing.<br />
 4. Reproduce the issue.<br />
-5. Go back to <strong>Network Monitor<&#47;strong> and click <strong>Stop<&#47;strong>.<br />
-6. Goto <strong>File<&#47;strong> - <strong>Save As<&#47;strong> and save the trace as a<strong> .cap<&#47;strong> file.<br />
-7. Create a txt file and record ip addresses of <strong>client, server and proxy<&#47;strong> (if there is any).</p>
+5. Go back to <strong>Network Monitor</strong> and click <strong>Stop</strong>.<br />
+6. Goto <strong>File</strong> - <strong>Save As</strong> and save the trace as a<strong> .cap</strong> file.<br />
+7. Create a txt file and record ip addresses of <strong>client, server and proxy</strong> (if there is any).</p>

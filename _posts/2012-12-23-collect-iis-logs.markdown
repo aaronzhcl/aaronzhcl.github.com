@@ -24,13 +24,13 @@ tags:
 comments: []
 ---
 <p>IIS 6 log file:</p>
-<p>1. In <strong>IIS Manager<&#47;strong>, expand the <strong>local computer<&#47;strong>, expand the <strong>Web Sites<&#47;strong> directory, right-click the Web site which has problem, and click <strong>Properties<&#47;strong>.<br />
-2. On the <strong>Web Site<&#47;strong> tab, click <strong>Properties<&#47;strong> next to the <strong>Active log format<&#47;strong> list box.<br />
-3. Under <strong>Log file<&#47;strong> directory, you can check the logging path and the log file name.<br />
+<p>1. In <strong>IIS Manager</strong>, expand the <strong>local computer</strong>, expand the <strong>Web Sites</strong> directory, right-click the Web site which has problem, and click <strong>Properties</strong>.<br />
+2. On the <strong>Web Site</strong> tab, click <strong>Properties</strong> next to the <strong>Active log format</strong> list box.<br />
+3. Under <strong>Log file</strong> directory, you can check the logging path and the log file name.<br />
 4. Go to the path and find the log files.</p>
 <p>IIS 7 log file:</p>
-<p>1. In <strong>IIS Manager<&#47;strong>, expand the <strong>local computer<&#47;strong>.<br />
-2. Click <strong>Sites<&#47;strong>. Check the <strong>ID<&#47;strong> of your website from the <strong>ID<&#47;strong> column.<br />
-3. Click the web site which has problem. Double-click <strong>Logging<&#47;strong> icon on the <strong>Feature View<&#47;strong>.<br />
-4. On the <strong>Logging<&#47;strong> window, you can find log&rsquo;s directory.<br />
+<p>1. In <strong>IIS Manager</strong>, expand the <strong>local computer</strong>.<br />
+2. Click <strong>Sites</strong>. Check the <strong>ID</strong> of your website from the <strong>ID</strong> column.<br />
+3. Click the web site which has problem. Double-click <strong>Logging</strong> icon on the <strong>Feature View</strong>.<br />
+4. On the <strong>Logging</strong> window, you can find log&rsquo;s directory.<br />
 5. Go to the folder end with your website ID and find the IIS log files.</p>

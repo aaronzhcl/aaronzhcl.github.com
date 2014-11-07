@@ -33,8 +33,8 @@ comments:
     that creates unique, SEO friendly articles \r\nin couple of minutes, just type
     in google  - laranita's free content source"
 ---
-<p><img class="alignright" alt="" src="http:&#47;&#47;upload.wikimedia.org&#47;wikipedia&#47;commons&#47;e&#47;e8&#47;WebKit_logo.png" width="358" height="358">OS: Windows 8.1<&#47;p>
-<p>IDE: Visual Studio 2013<&#47;p>
+<p><img class="alignright" alt="" src="http://upload.wikimedia.org/wikipedia/commons/e/e8/WebKit_logo.png" width="358" height="358">OS: Windows 8.1</p>
+<p>IDE: Visual Studio 2013</p>
 <ol>
 <li>You can build with either Visual Studio 2013 or Visual Studio 2013 express. (Newer versions currently unsupported)<br>Use the default options for the installation.
 <li>Install Cygwin<br>Cygwin is a collection of utilities for Windows that includes not only a Subversion client, but also additional tools that are required to build the WebKit source. We have made a downloader available that automatically collects all of the required packages.
@@ -47,15 +47,15 @@ comments:
 <li>Select Packages: Search "gdb", expand Devel, select "gdb: The GNU Debugger"
 <li>Open C:\cygwin\etc\profile
 <ol>
-<li>Modify line 32 to PATH="&#47;bin:${PATH}"
-<li>Comment line 44-50 (related to TMP variable) by adding '#' at the beginning of each line. <&#47;li><&#47;ol><&#47;li><&#47;ol>
-<li>You can download a snapshot of the WebKit source tree from <a href="http:&#47;&#47;nightly.webkit.org&#47;files&#47;WebKit-SVN-source.tar.bz2">http:&#47;&#47;nightly.webkit.org&#47;files&#47;WebKit-SVN-source.tar.bz2<&#47;a>.
+<li>Modify line 32 to PATH="/bin:${PATH}"
+<li>Comment line 44-50 (related to TMP variable) by adding '#' at the beginning of each line. </li></ol></li></ol>
+<li>You can download a snapshot of the WebKit source tree from <a href="http://nightly.webkit.org/files/WebKit-SVN-source.tar.bz2">http://nightly.webkit.org/files/WebKit-SVN-source.tar.bz2</a>.
 <li>Install the WebKit Support Libraries
 <ol>
 <li>Download the WebKit Support Libraries to the root of your source tree (C:\cygwin\home\<username>\WebKit). If the file is incorrectly named, rename it to WebKitSupportLibrary.zip. Do not extract its contents.
-<li>Install QuickTime SDK and QuickTime or GStreamer<br>Download QuickTime SDK for Windows from <a href="http:&#47;&#47;developer.apple.com&#47;quicktime&#47;download&#47;">http:&#47;&#47;developer.apple.com&#47;quicktime&#47;download&#47;<&#47;a> and install it to the default location (\Program Files\QuickTime SDK). This is needed for media support for the AppleWin port. <&#47;li><&#47;ol>
+<li>Install QuickTime SDK and QuickTime or GStreamer<br>Download QuickTime SDK for Windows from <a href="http://developer.apple.com/quicktime/download/">http://developer.apple.com/quicktime/download/</a> and install it to the default location (\Program Files\QuickTime SDK). This is needed for media support for the AppleWin port. </li></ol>
 <li>Install DirectX SDK<br>Download the June 2010 DirectX SDK This is needed for accelerated compositing.
-<li>Run Tools&#47;Scripts&#47;update-webkit, if it fails to say CURL: ssl version is unsupported, change the Tools&#47;Scripts&#47;update-webkit-dependency line 85 and line 116 from sslv3 to tlsv1.
-<li>Run Tools&#47;Scripts&#47;build-webkit or use Visual Studio to open webkit\Source\WebKit\WebKit.vcxproj\webkit.sln and start build. <&#47;li><&#47;ol>
-<p><strong>Common Build Errors<&#47;strong><&#47;p>
-<p><a title="http:&#47;&#47;trac.webkit.org&#47;wiki&#47;BuildingOnWindows#CommonBuildErrors" href="http:&#47;&#47;trac.webkit.org&#47;wiki&#47;BuildingOnWindows#CommonBuildErrors" target="_blank">http:&#47;&#47;trac.webkit.org&#47;wiki&#47;BuildingOnWindows#CommonBuildErrors<&#47;a><&#47;p></p>
+<li>Run Tools/Scripts/update-webkit, if it fails to say CURL: ssl version is unsupported, change the Tools/Scripts/update-webkit-dependency line 85 and line 116 from sslv3 to tlsv1.
+<li>Run Tools/Scripts/build-webkit or use Visual Studio to open webkit\Source\WebKit\WebKit.vcxproj\webkit.sln and start build. </li></ol>
+<p><strong>Common Build Errors</strong></p>
+<p><a title="http://trac.webkit.org/wiki/BuildingOnWindows#CommonBuildErrors" href="http://trac.webkit.org/wiki/BuildingOnWindows#CommonBuildErrors" target="_blank">http://trac.webkit.org/wiki/BuildingOnWindows#CommonBuildErrors</a></p></p>

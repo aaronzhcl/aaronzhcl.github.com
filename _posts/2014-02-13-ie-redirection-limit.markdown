@@ -23,11 +23,11 @@ tags:
 - MaxHttpRedirects
 comments: []
 ---
-<p><a href="http:&#47;&#47;webdebug.net&#47;wp-content&#47;uploads&#47;2014&#47;02&#47;301-302-redirect.jpg"><img class="alignright size-medium wp-image-488" alt="301-302-redirect" src="http:&#47;&#47;webdebug.net&#47;wp-content&#47;uploads&#47;2014&#47;02&#47;301-302-redirect-300x155.jpg" width="300" height="155" &#47;><&#47;a>Users might get &ldquo;This page can&rsquo;t be displayed&rdquo; error in IE7 or IE8 when a website requires too many redirections to go to the destination page. The question is how much redirection will be considered as &ldquo;too many&rdquo;.</p>
+<p><a href="http://webdebug.net/wp-content/uploads/2014/02/301-302-redirect.jpg"><img class="alignright size-medium wp-image-488" alt="301-302-redirect" src="http://webdebug.net/wp-content/uploads/2014/02/301-302-redirect-300x155.jpg" width="300" height="155" /></a>Users might get &ldquo;This page can&rsquo;t be displayed&rdquo; error in IE7 or IE8 when a website requires too many redirections to go to the destination page. The question is how much redirection will be considered as &ldquo;too many&rdquo;.</p>
 <p>IE7 and IE8 sets the default value of redirection limit as 10, so if a webpage causes more than 10 continuous redirection, &ldquo;Page can&rsquo;t be displayed&rdquo; error will be displayed.</p>
 <p>This limit can be changed by adding the following registry key,</p>
-<p><strong>HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings<&#47;strong></p>
-<p><strong>Value: MaxHttpRedirects<&#47;strong></p>
-<p><strong>Type: DWORD<&#47;strong></p>
+<p><strong>HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings</strong></p>
+<p><strong>Value: MaxHttpRedirects</strong></p>
+<p><strong>Type: DWORD</strong></p>
 <p>However, from IE9 IE has increase this value by multiplying a coefficient (11). Since the default value of MaxHttpRedirects is kept as 10, the redirection limit will be 10*11 = 110 since IE9.</p>
 <p>If you chance the registry to 20, then the redirection limit will be 20 * 11 = 220.</p>

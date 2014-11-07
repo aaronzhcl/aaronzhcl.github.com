@@ -24,15 +24,15 @@ tags:
 - executionTimeout
 comments: []
 ---
-<p><a href="http:&#47;&#47;blogs.msdn.com&#47;b&#47;asiatech&#47;archive&#47;2011&#47;07&#47;06&#47;how-to-troubleshoot-httpexception-request-timed-out-asp-net-2-0-32-bit.aspx" target="_blank"><strong>How to troubleshoot HttpException Request timed out (ASP.NET 2.0 32-bit)<&#47;strong><&#47;a><br />
-<a href="http:&#47;&#47;blogs.msdn.com&#47;b&#47;asiatech&#47;archive&#47;2012&#47;06&#47;21&#47;how-to-troubleshoot-httpexception-request-timed-out-asp-net-4-0-64-bit.aspx" target="_blank"><strong>How to troubleshoot HttpException Request timed out (ASP.NET 4.0 64-bit)<&#47;strong><&#47;a><br />
+<p><a href="http://blogs.msdn.com/b/asiatech/archive/2011/07/06/how-to-troubleshoot-httpexception-request-timed-out-asp-net-2-0-32-bit.aspx" target="_blank"><strong>How to troubleshoot HttpException Request timed out (ASP.NET 2.0 32-bit)</strong></a><br />
+<a href="http://blogs.msdn.com/b/asiatech/archive/2012/06/21/how-to-troubleshoot-httpexception-request-timed-out-asp-net-4-0-64-bit.aspx" target="_blank"><strong>How to troubleshoot HttpException Request timed out (ASP.NET 4.0 64-bit)</strong></a><br />
 By XinJin</p>
 <p>The user may receive the following response intermittently:<br />
 <code>Request timed out.<br />
 Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.<br />
 Exception Details: System.Web.HttpException: Request timed out.<br />
 Source Error:<br />
-An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.<&#47;code><br />
+An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.</code><br />
 --------------------------------------------------------<br />
 <code>[HttpException (0x80004005): Request timed out.]<br />
 The following warning may occur in application event logs:<br />
@@ -42,7 +42,7 @@ Event ID: 1309<br />
 Task Category: Web Event<br />
 Level: Warning<br />
 Keywords: Classic<br />
-User: N&#47;A<br />
+User: N/A<br />
 Description:<br />
 Event code: 3001<br />
 Event message: The request has been aborted.<br />
@@ -56,10 +56,10 @@ Account name: IIS APPPOOL\ASP.NET v4.0<br />
 Exception information:<br />
 Exception type: HttpException<br />
 Exception message: Request timed out.<br />
-<&#47;code><br />
+</code><br />
 This kind of issue is typically occurs when the ASP.NET request executes for a period of time longer than the maximum timeout period allowed for server-side code execution.</p>
 <p>This maximum timeout period can be set by executionTimeout attribute of httpRuntime element in config file. (The default value is 110 seconds in .Net 4.0)</p>
-<p><a href="http:&#47;&#47;blogs.msdn.com&#47;b&#47;asiatech&#47;archive&#47;2012&#47;08&#47;27&#47;httpexception-request-timed-out-error-occurs-even-if-executiontimeout-attribute-is-set-to-a-large-value.aspx" target="_blank"><strong>HttpException &ldquo;Request timed out&rdquo; error occurs even if executionTimeout attribute is set to a large value<&#47;strong><&#47;a><br />
+<p><a href="http://blogs.msdn.com/b/asiatech/archive/2012/08/27/httpexception-request-timed-out-error-occurs-even-if-executiontimeout-attribute-is-set-to-a-large-value.aspx" target="_blank"><strong>HttpException &ldquo;Request timed out&rdquo; error occurs even if executionTimeout attribute is set to a large value</strong></a><br />
 By XinJin</p>
 <p><code>Request timed out.<br />
 Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.<br />
@@ -68,6 +68,6 @@ Source Error:<br />
 An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.<br />
 Stack Trace:<br />
 [HttpException (0x80004005): Request timed out.]<br />
-<&#47;code><br />
+</code><br />
 This issue typically occurs when the ASP.NET request executes for a period of time longer than the maximum timeout period allowed for server-side code execution.<br />
 My customer knows it will take 5 minutes to execute his ASP.NET page because the page needs to retrieve large data from database to generate a report. Therefore he has already set the value of executionTimeout attribute of httpRuntime element to 600 seconds in web.config. However he still receives HttpException &ldquo;Request timed out&rdquo; error while the ASP.NET page executes for 2 or 3 minutes.</p>

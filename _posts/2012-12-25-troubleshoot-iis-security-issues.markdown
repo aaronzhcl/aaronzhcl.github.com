@@ -25,7 +25,7 @@ tags:
 - https
 comments: []
 ---
-<p><strong><a href="http:&#47;&#47;www.iis.net&#47;learn&#47;troubleshoot&#47;security-issues&#47;troubleshooting-ssl-related-issues-server-certificate" target="_blank">Troubleshooting SSL related issues (Server Certificate)<&#47;a><&#47;strong><br />
+<p><strong><a href="http://www.iis.net/learn/troubleshoot/security-issues/troubleshooting-ssl-related-issues-server-certificate" target="_blank">Troubleshooting SSL related issues (Server Certificate)</a></strong><br />
 Published on April 9, 2012 by Kaushal Kumar Panday</p>
 <p>This document will help you in troubleshooting SSL issues related to IIS only. Client Certificates troubleshooting will not be covered in this document. Server Certificates are meant for Server Authentication and we will be dealing only with Server Certificates in this document.<br />
 If the Client certificates section is set to &ldquo;Require&rdquo; and then you run into issues, then please don&rsquo;t refer this document. This is meant for troubleshooting SSL Server certificates issue only.<br />

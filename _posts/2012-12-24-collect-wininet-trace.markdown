@@ -35,10 +35,10 @@ comments:
 <p>(Optional) Clear IE cache<br />
 1. Start command line with elevated privilege<br />
 2. Execute command<br />
-<code>netsh trace start scenario=InternetClient level=5 capture=yes report=yes fileMode=single maxSize=0 correlation=yes tracefile=c:\temp\trace.etl<&#47;code><br />
+<code>netsh trace start scenario=InternetClient level=5 capture=yes report=yes fileMode=single maxSize=0 correlation=yes tracefile=c:\temp\trace.etl</code><br />
 3. Reproduce the issue<br />
 4. Stop tracing with command<br />
-<code>netsh trace stop<&#47;code><br />
+<code>netsh trace stop</code><br />
 5. Trace is generated in c:\temp with two files below<br />
 <code>c:\temp\trace.etl<br />
-c:\temp\trace.cab<&#47;code></p>
+c:\temp\trace.cab</code></p>

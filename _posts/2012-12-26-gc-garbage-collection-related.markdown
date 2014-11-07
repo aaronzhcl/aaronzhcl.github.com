@@ -25,7 +25,7 @@ tags:
 comments: []
 ---
 <p>Do you know GC(Garbage Collection)? Here is a list of questions with answers. You can check whether you can answer them.</p>
-<p><a href="http:&#47;&#47;blogs.msdn.com&#47;b&#47;tess&#47;archive&#47;2007&#47;04&#47;10&#47;net-garbage-collector-popquiz-followup.aspx" target="_blank"><strong>.NET Garbage Collector PopQuiz - Followup<&#47;strong><&#47;a><br />
+<p><a href="http://blogs.msdn.com/b/tess/archive/2007/04/10/net-garbage-collector-popquiz-followup.aspx" target="_blank"><strong>.NET Garbage Collector PopQuiz - Followup</strong></a><br />
 By Tess Ferrandez</p>
 <p>1. How many GC threads do we have in a .NET process running the Server version of the GC on a dual-core machine?<br />
 2. What GC mode is used in the web development server (cassini) on a quad proc machine? Why? (you can choose from server, workstation or concurrent-workstation)<br />
@@ -34,9 +34,9 @@ By Tess Ferrandez</p>
 5. What causes an object to move from Generation 0 to Generation 1 or to Generation 2?<br />
 6. If you look at the GC sizes for Generation 0, 1 and 2 in perfmon, why is most of the memory in the process in Gen 2?<br />
 ...</p>
-<p><a href="http:&#47;&#47;blogs.msdn.com&#47;b&#47;tess&#47;archive&#47;2008&#47;04&#47;17&#47;how-does-the-gc-work-and-what-are-the-sizes-of-the-different-generations.aspx" target="_blank"><strong>How does the GC work and what are the sizes of the different generations?<&#47;strong><&#47;a><br />
+<p><a href="http://blogs.msdn.com/b/tess/archive/2008/04/17/how-does-the-gc-work-and-what-are-the-sizes-of-the-different-generations.aspx" target="_blank"><strong>How does the GC work and what are the sizes of the different generations?</strong></a><br />
 By Tess Ferrandez</p>
-<p><strong>Contents<&#47;strong><br />
+<p><strong>Contents</strong><br />
 What are segments and heaps? How much is allocated for the GC?<br />
 What are generations and why do we use a generational GC?<br />
 When and how does a collection occur?<br />
@@ -47,9 +47,9 @@ What is the cost of a garbage collection? How can I keep this cost at a minimum?
 Additional Resources</p>
 <p>&nbsp;</p>
 <p>If you want to know more. Here are the in-depth articles related with CLR memory management from MSDN Magazine</p>
-<p><a href="http:&#47;&#47;msdn.microsoft.com&#47;en-us&#47;magazine&#47;cc163528.aspx" target="_blank"><strong>Investigating Memory Issues<&#47;strong><&#47;a><br />
+<p><a href="http://msdn.microsoft.com/en-us/magazine/cc163528.aspx" target="_blank"><strong>Investigating Memory Issues</strong></a><br />
 By Claudio Caldato and Maoni Stephens</p>
-<p><strong>Contents<&#47;strong><br />
+<p><strong>Contents</strong><br />
 Tools of the Trade<br />
 GC Performance Counters<br />
 Windows Performance Counters<br />
@@ -60,17 +60,17 @@ What If Objects Survive?<br />
 Is Fragmentation a Problem on Your Managed Heap?<br />
 Measuring Time Spent on Garbage Collection<br />
 Investigating High CPU Usage</p>
-<p><strong><a href="http:&#47;&#47;msdn.microsoft.com&#47;en-us&#47;magazine&#47;cc534993.aspx" target="_blank">Large Object Heap Uncovered<&#47;a><&#47;strong><br />
+<p><strong><a href="http://msdn.microsoft.com/en-us/magazine/cc534993.aspx" target="_blank">Large Object Heap Uncovered</a></strong><br />
 By Maoni Stephens</p>
-<p><strong>Contents<&#47;strong><br />
+<p><strong>Contents</strong><br />
 The Large Object Heap and the GC<br />
 When a Large Object Gets Collected<br />
 LOH Performance Implications<br />
 Collecting Performance Data for the LOH<br />
 Using a Debugger</p>
-<p><strong><a href="http:&#47;&#47;msdn.microsoft.com&#47;en-us&#47;magazine&#47;cc163392.aspx" target="_blank">Digging into IDisposable<&#47;a><&#47;strong><br />
+<p><strong><a href="http://msdn.microsoft.com/en-us/magazine/cc163392.aspx" target="_blank">Digging into IDisposable</a></strong><br />
 By Shawn Farkas</p>
-<p><strong>Contents<&#47;strong><br />
+<p><strong>Contents</strong><br />
 Disposable Objects<br />
 The Disposable Pattern<br />
 Managed vs. Native Resources<br />

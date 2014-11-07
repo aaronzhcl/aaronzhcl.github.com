@@ -23,14 +23,14 @@ tags:
 comments: []
 ---
 <p>1) Wireshark is released under the GNU Public License; its source code is available to all, and if anybody makes a modified version of Wireshark available, they must make it available in source form to everybody to whom they make it available in binary form (see the GPL, Version 2:<br />
-<a href="http:&#47;&#47;www.gnu.org&#47;licenses&#47;old-licenses&#47;gpl-2.0.html" target="_blank">http:&#47;&#47;www.gnu.org&#47;licenses&#47;old-licenses&#47;gpl-2.0.html<&#47;a><br />
+<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" target="_blank">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a><br />
 and the FAQ about it:<br />
-<a href="http:&#47;&#47;www.gnu.org&#47;licenses&#47;old-licenses&#47;gpl-2.0-faq.html" target="_blank">http:&#47;&#47;www.gnu.org&#47;licenses&#47;old-licenses&#47;gpl-2.0-faq.html<&#47;a><br />
+<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html" target="_blank">http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html</a><br />
 for a more detailed and perhaps more correct explanation). It is available at no cost.<br />
 Microsoft Network Monitor (henceforth referred to as "NetMon") is available at no cost, but its source code is not available.</p>
 <p>2) Wireshark dissects packets by directly executing code, written in C, Lua (for versions of Wireshark built with Lua) or, I think, Python (for versions of Wireshark built with the Python interpreter); a third-party plugin:<br />
-<a href="http:&#47;&#47;wsgd.free.fr&#47;" target="_blank">http:&#47;&#47;wsgd.free.fr&#47;<&#47;a><br />
-allows packet formats to be described in a packet description language. Tools exist to transform some packet description languages (ASN.1, Samba's PIDL interface description language for DCERPC&#47;MSRPC, CORBA IDL) into C code.<br />
+<a href="http://wsgd.free.fr/" target="_blank">http://wsgd.free.fr/</a><br />
+allows packet formats to be described in a packet description language. Tools exist to transform some packet description languages (ASN.1, Samba's PIDL interface description language for DCERPC/MSRPC, CORBA IDL) into C code.<br />
 NetMon dissects packets by using packet descriptions written in NetMon's own packet description language.</p>
 <p>3) Wireshark runs on Windows and a number of UN*Xes (Linux distributions, *BSD, Mac OS X, Solaris, HP-UX, AIX, etc.).<br />
 NetMon runs only on Windows (it might be able to run, without support for packet capture, on x86 UN*Xes under Wine).</p>

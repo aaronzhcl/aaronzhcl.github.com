@@ -24,12 +24,12 @@ tags:
 - cloud services
 comments: []
 ---
-<p><strong>WebMatrix How to<&#47;strong><br />
+<p><strong>WebMatrix How to</strong><br />
 By Microsoft<br />
-<a href="http:&#47;&#47;www.microsoft.com&#47;web&#47;category&#47;how-to" target="_blank">http:&#47;&#47;www.microsoft.com&#47;web&#47;category&#47;how-to<&#47;a></p>
-<p><strong>Publishing Cloud Services to Windows Azure from Visual Studio<&#47;strong><br />
+<a href="http://www.microsoft.com/web/category/how-to" target="_blank">http://www.microsoft.com/web/category/how-to</a></p>
+<p><strong>Publishing Cloud Services to Windows Azure from Visual Studio</strong><br />
 By Microsoft<br />
-<a href="http:&#47;&#47;msdn.microsoft.com&#47;en-us&#47;library&#47;windowsazure&#47;ee460772.aspx" target="_blank">http:&#47;&#47;msdn.microsoft.com&#47;en-us&#47;library&#47;windowsazure&#47;ee460772.aspx<&#47;a></p>
-<p><strong>Nodejs Tutorials<&#47;strong><br />
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460772.aspx" target="_blank">http://msdn.microsoft.com/en-us/library/windowsazure/ee460772.aspx</a></p>
+<p><strong>Nodejs Tutorials</strong><br />
 By Microsoft<br />
-<a href="http:&#47;&#47;www.windowsazure.com&#47;en-us&#47;develop&#47;nodejs&#47;tutorials&#47;" target="_blank">http:&#47;&#47;www.windowsazure.com&#47;en-us&#47;develop&#47;nodejs&#47;tutorials&#47;<&#47;a></p>
+<a href="http://www.windowsazure.com/en-us/develop/nodejs/tutorials/" target="_blank">http://www.windowsazure.com/en-us/develop/nodejs/tutorials/</a></p>

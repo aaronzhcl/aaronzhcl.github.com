@@ -26,10 +26,10 @@ tags:
 - Registry
 comments: []
 ---
-<p>1. Download and run <strong>Process Monitor<&#47;strong> from <a href="http:&#47;&#47;technet.microsoft.com&#47;en-us&#47;sysinternals&#47;bb896645.aspx">http:&#47;&#47;technet.microsoft.com&#47;en-us&#47;sysinternals&#47;bb896645.aspx<&#47;a><br />
-2. On the <strong>Filter<&#47;strong> menu, click <strong>Enable Advanced Output<&#47;strong>.<br />
+<p>1. Download and run <strong>Process Monitor</strong> from <a href="http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx">http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx</a><br />
+2. On the <strong>Filter</strong> menu, click <strong>Enable Advanced Output</strong>.<br />
 3. Reproduce the issue.<br />
-4. On the <strong>File<&#47;strong> menu, uncheck <strong>Capture Events<&#47;strong> to stop capturing.<br />
-5. Click <strong>Save<&#47;strong> to save the Process Monitor log file.<br />
-6. Under <strong>Events<&#47;strong> to save, click to select the <strong>All events<&#47;strong> check box.<br />
-7. Under <strong>Format<&#47;strong>, click to select the <strong>Native Process Monitor Format (PML)<&#47;strong> check box.</p>
+4. On the <strong>File</strong> menu, uncheck <strong>Capture Events</strong> to stop capturing.<br />
+5. Click <strong>Save</strong> to save the Process Monitor log file.<br />
+6. Under <strong>Events</strong> to save, click to select the <strong>All events</strong> check box.<br />
+7. Under <strong>Format</strong>, click to select the <strong>Native Process Monitor Format (PML)</strong> check box.</p>

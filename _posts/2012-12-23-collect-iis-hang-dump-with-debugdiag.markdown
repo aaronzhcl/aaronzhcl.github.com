@@ -24,7 +24,7 @@ tags:
 - DebugDiag
 comments: []
 ---
-<p>1. Download and Install <strong>DebugDiag<&#47;strong> on <strong>web server<&#47;strong> from <a href="http:&#47;&#47;www.microsoft.com&#47;download&#47;en&#47;details.aspx?id=26798">http:&#47;&#47;www.microsoft.com&#47;download&#47;en&#47;details.aspx?id=26798<&#47;a><br />
-2. Run <strong>Debug Diag Tool 1.2<&#47;strong> and go to <strong>Processes<&#47;strong> tab.<br />
-3. Right click the <strong>w3wp<&#47;strong> process and click <strong>Create Full User Dump<&#47;strong> (refer to <strong>command line<&#47;strong> column for the hanging application if there are multiple w3wp process listed)<br />
+<p>1. Download and Install <strong>DebugDiag</strong> on <strong>web server</strong> from <a href="http://www.microsoft.com/download/en/details.aspx?id=26798">http://www.microsoft.com/download/en/details.aspx?id=26798</a><br />
+2. Run <strong>Debug Diag Tool 1.2</strong> and go to <strong>Processes</strong> tab.<br />
+3. Right click the <strong>w3wp</strong> process and click <strong>Create Full User Dump</strong> (refer to <strong>command line</strong> column for the hanging application if there are multiple w3wp process listed)<br />
 4. A dialog will pop up after the dump is created and shows the dump location.</p>

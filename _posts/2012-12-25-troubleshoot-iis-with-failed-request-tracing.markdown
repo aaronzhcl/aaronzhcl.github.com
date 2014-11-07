@@ -25,9 +25,9 @@ comments: []
 ---
 <p>Failed-request tracing is designed to buffer the trace events for a request and only flush them to disk if the request "fails," where you provide the definition of "failure".</p>
 <p>Basic steps</p>
-<p><strong><a href="http:&#47;&#47;www.trainsignal.com&#47;blog&#47;iis-7-troubleshooting" target="_blank">http:&#47;&#47;www.trainsignal.com&#47;blog&#47;iis-7-troubleshooting<&#47;a><&#47;strong></p>
+<p><strong><a href="http://www.trainsignal.com/blog/iis-7-troubleshooting" target="_blank">http://www.trainsignal.com/blog/iis-7-troubleshooting</a></strong></p>
 <p>Other reference</p>
-<p><strong><a href="http:&#47;&#47;www.iis.net&#47;learn&#47;troubleshoot&#47;using-failed-request-tracing&#47;troubleshooting-failed-requests-using-tracing-in-iis" target="_blank">Troubleshooting Failed Requests Using Tracing in IIS 7<&#47;a><&#47;strong></p>
-<p><strong><a href="http:&#47;&#47;www.iis.net&#47;learn&#47;troubleshoot&#47;using-failed-request-tracing&#47;how-to-enable-failed-request-tracing-for-unc-hosting" target="_blank">How to Enable Failed Request Tracing for UNC Hosting<&#47;a><&#47;strong></p>
-<p><strong><a href="http:&#47;&#47;www.iis.net&#47;learn&#47;troubleshoot&#47;using-failed-request-tracing&#47;using-failed-request-tracing-rules-to-troubleshoot-application-request-routing-arr">Using Failed Request Tracing Rules to Troubleshoot Application Request Routing (ARR)<&#47;a><&#47;strong></p>
-<p><strong><a href="http:&#47;&#47;www.iis.net&#47;learn&#47;troubleshoot&#47;using-failed-request-tracing&#47;troubleshoot-with-failed-request-tracing">Troubleshoot with Failed Request Tracing<&#47;a><&#47;strong></p>
+<p><strong><a href="http://www.iis.net/learn/troubleshoot/using-failed-request-tracing/troubleshooting-failed-requests-using-tracing-in-iis" target="_blank">Troubleshooting Failed Requests Using Tracing in IIS 7</a></strong></p>
+<p><strong><a href="http://www.iis.net/learn/troubleshoot/using-failed-request-tracing/how-to-enable-failed-request-tracing-for-unc-hosting" target="_blank">How to Enable Failed Request Tracing for UNC Hosting</a></strong></p>
+<p><strong><a href="http://www.iis.net/learn/troubleshoot/using-failed-request-tracing/using-failed-request-tracing-rules-to-troubleshoot-application-request-routing-arr">Using Failed Request Tracing Rules to Troubleshoot Application Request Routing (ARR)</a></strong></p>
+<p><strong><a href="http://www.iis.net/learn/troubleshoot/using-failed-request-tracing/troubleshoot-with-failed-request-tracing">Troubleshoot with Failed Request Tracing</a></strong></p>
