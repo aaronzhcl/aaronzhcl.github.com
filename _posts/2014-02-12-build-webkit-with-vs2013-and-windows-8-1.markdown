@@ -33,11 +33,12 @@ comments:
     that creates unique, SEO friendly articles \r\nin couple of minutes, just type
     in google  - laranita's free content source"
 ---
-<p><img class="alignright" alt="" src="http://upload.wikimedia.org/wikipedia/commons/e/e8/WebKit_logo.png" width="358" height="358">OS: Windows 8.1</p>
+<p><img class="alignright" alt="" src="http://upload.wikimedia.org/wikipedia/commons/e/e8/WebKit_logo.png" width="358" height="358"></p><p>OS: Windows 8.1</p>
 <p>IDE: Visual Studio 2013</p>
 <ol>
 <li>You can build with either Visual Studio 2013 or Visual Studio 2013 express. (Newer versions currently unsupported)<br>Use the default options for the installation.
 <li>Install Cygwin<br>Cygwin is a collection of utilities for Windows that includes not only a Subversion client, but also additional tools that are required to build the WebKit source. We have made a downloader available that automatically collects all of the required packages.
+<!--more-->
 <ol>
 <li>Download cygwin-downloader.zip.
 <li>Extract the content of the archive to some folder and start cygwin-downloader.exe from that folder. This will download all the Cygwin packages you need.

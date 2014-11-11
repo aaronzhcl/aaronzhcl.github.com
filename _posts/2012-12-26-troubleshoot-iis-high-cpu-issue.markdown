@@ -25,6 +25,7 @@ comments: []
 <p><strong><a href="http://www.iis.net/learn/troubleshoot/performance-issues/troubleshooting-high-cpu-in-an-iis-7x-application-pool" target="_blank">Troubleshooting High CPU in an IIS 7.x Application Pool</a></strong></p>
 <p>Published on April 9, 2012 by Jim Cheshire</p>
 <p>This troubleshooter will help you to identify the cause of sustained high CPU in an IIS application pool. It&rsquo;s important to keep in mind that it is normal for CPU usage to increase as a web application serves requests. However, if you consistently see CPU remain at a high level (in the area of 80% or greater) for prolonged periods, the performance of your application will suffer. For that reason, it&rsquo;s important to understand the cause of sustained high CPU so that it can be addressed and corrected if possible.</p>
+<!--more-->
 <p><a href="http://blogs.msdn.com/b/mike/archive/2007/12/06/troubleshooting-high-cpu-performance-issues.aspx" target="_blank"><strong>Troubleshooting High CPU performance issues</strong></a><br />
 By Mike Laing</p>
 <p><a href="http://blogs.msdn.com/b/mike/archive/2007/12/06/troubleshooting-high-cpu-performance-issues.aspx" target="_blank">Part 1</a><br />

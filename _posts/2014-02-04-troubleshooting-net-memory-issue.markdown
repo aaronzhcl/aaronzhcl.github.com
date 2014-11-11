@@ -29,6 +29,7 @@ comments: []
 <h2><a href="http://msdn.microsoft.com/en-us/magazine/cc163528.aspx" target="_blank">MSDN Magazine - Investigating Memory Issues</a></h2></p>
 <div>
 <p><a href="http://webdebug.net/wp-content/uploads/2014/02/Main-interface_2.jpg"><img class="alignright size-medium wp-image-486" alt="Main interface_2" src="http://webdebug.net/wp-content/uploads/2014/02/Main-interface_2-300x227.jpg" width="300" height="227" /></a>Uncovering and correcting memory issues in managed applications can be difficult. Memory issues manifest themselves in different ways. For example, you may observe your application's memory usage growing unboundedly, eventually resulting in an Out Of Memory (OOM) exception. (Your application may even throw out-of-memory exceptions when there is plenty of physical memory available.) But any one of the following may indicate a possible memory issue:</p>
+<!--more-->
 <ul>
 <li>An OutOfMemoryException is thrown.</li>
 <li>The process is using too much memory for no obvious reason that you can determine.</li>

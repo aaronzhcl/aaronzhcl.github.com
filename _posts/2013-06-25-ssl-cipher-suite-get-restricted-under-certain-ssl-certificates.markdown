@@ -73,6 +73,7 @@ As a result, the following errors appear in the server logs when attempting to c
 <blockquote><p>Schannel Error 36874 "An TLS 1.0 connection was recieved from a remote client application, but dodne of the cipher suites supported by the client are supported by the server. The SSL connection request has failed."<br />
 Schannel Error 36888 "The following fatal alert was generated: 40. The internal error state is 1204</blockquote><br />
 &nbsp;</p>
+<!--more-->
 <p><strong>Root Cause:</strong></p>
 <p>If the certificate being used on the server was generated using the Legacy Key option in the certificate request form, the private key for that certificate will be stored in Microsoft's legacy Cryptographic API framework. When the web server tries to process requests using its new, Cryptographic Next Generation (CNG) framework, it appears that something related to the RSA private key stored in the legacy framework is unavailable to the new framework. As a result, the use of the RSA cipher suites is severely limited.</p>
 <p><strong>Solution:</strong><br />

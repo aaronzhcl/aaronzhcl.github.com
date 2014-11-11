@@ -26,6 +26,7 @@ comments: []
 <p><strong><a href="https://developers.google.com/speed/docs/best-practices/rules_intro" target="_blank">Web Performance Best Practices</a></strong></p>
 <p>by google</p>
 <p>When you profile a web page with Page Speed, it evaluates the page's conformance to a number of different&nbsp;<i>rules</i>.&nbsp;These rules are general front-end best practices you can apply at any stage of web development. We provide documentation of each of the rules here, so whether or not you run the Page Speed tool &mdash; maybe you're just developing a brand new site and aren't ready to test it &mdash; you can refer to these pages at any time.&nbsp;We give you specific tips and suggestions for how you can best implement the rules and incorporate them into your development process.</p>
+<!--more-->
 <ul>
 <li><a href="https://developers.google.com/speed/docs/best-practices/caching">Optimizing caching</a>&nbsp;&mdash; keeping your application's data and logic&nbsp;<i>off</i>&nbsp;the network altogether</li>
 <li><a href="https://developers.google.com/speed/docs/best-practices/rtt">Minimizing round-trip times</a>&nbsp;&mdash; reducing the number of serial request-response cycles</li>

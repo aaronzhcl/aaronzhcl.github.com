@@ -34,6 +34,7 @@ By Tess Ferrandez</p>
 5. What causes an object to move from Generation 0 to Generation 1 or to Generation 2?<br />
 6. If you look at the GC sizes for Generation 0, 1 and 2 in perfmon, why is most of the memory in the process in Gen 2?<br />
 ...</p>
+<!--more-->
 <p><a href="http://blogs.msdn.com/b/tess/archive/2008/04/17/how-does-the-gc-work-and-what-are-the-sizes-of-the-different-generations.aspx" target="_blank"><strong>How does the GC work and what are the sizes of the different generations?</strong></a><br />
 By Tess Ferrandez</p>
 <p><strong>Contents</strong><br />

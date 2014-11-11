@@ -51,6 +51,7 @@ comments:
 <li>The script mapping for the file type that you are trying to execute is not set up to recognize the verb that you are using (for example, GET or POST). To verify this, right-click the directory in Microsoft Management Console, click<b>Properties</b>, click the&nbsp;<b>Directory</b>&nbsp;tab, click&nbsp;<b>Configuration</b>, and verify that the script mapping for the appropriate file type is set up to allow the verb that you are using.</li><br />
 </ul><br />
 </li></p>
+<!--more-->
 <li><b>403.2 - Read access forbidden.</b>&nbsp;Verify that you have set up IIS to allow Read access to the directory. Also, if you are using a default document, verify that the document exists. For additional information about how to resolve this problem, click the article number below to view the article in the Microsoft Knowledge Base:
 <div><a href="http://support.microsoft.com/kb/247677/EN-US">247677</a>&nbsp;Error Message: 403.2 Forbidden: Read Access Forbidden</div></li></p>
 <li><b>403.3 - Write access forbidden.</b>&nbsp;Verify that the IIS permissions and the NTFS permissions are set up to grant Write access to the directory.For additional information about how to resolve this problem, click the article number below to view the article in the Microsoft Knowledge Base:

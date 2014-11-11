@@ -26,6 +26,7 @@ comments: []
 <p><a href="http://msdn.microsoft.com/en-us/library/bb250448(v=vs.85).aspx" target="_blank"><strong>Understanding and Solving Internet Explorer Leak Patterns</strong></a></p>
 <p>The following sections will discuss patterns of memory leaks and point out some common examples of each pattern. One great example of a pattern is the closure feature of JScript, while another example is the use of closures in hooking events. If you're familiar with the event hooking example, you might be able to find and fix many of your memory leaks, but other closure-related issues might go unnoticed.<br />
 Now, let's look at the following patterns:</p>
+<!--more-->
 <ul>
 <li><strong>Circular References</strong>&mdash;When mutual references are counted between Internet Explorer's COM infrastructure and any scripting engine, objects can leak memory. This is the broadest pattern.</li>
 <li><strong>Closures</strong>&mdash;Closures are a specific form of circular reference that pose the largest pattern to existing Web application architectures. Closures are easy to spot because they rely on a specific language keyword and can be searched for generically.</li>

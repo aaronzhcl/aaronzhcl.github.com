@@ -46,6 +46,7 @@ comments:
 <li>Closely monitor recycles and ensure that they are not too many (reducing the performance and/or availability of the application), or too few (allowing memory consumption of the application to create too much memory pressure on the server).</li>
 <li>Use overlapped recycling when possible.</li><br />
 </ul><br />
+<!--more-->
 The documentation suggests setting the Virtual Memory threshold as high as 70% of the system&rsquo;s memory, and the Used Memory as high as 60% of the system&rsquo;s memory. However, for recycling purposes, and considering that during the recycle two processes must run concurrently, these settings could prove to be a bit aggressive. As an estimate, for a 32 bit server with 4 GB of RAM, the Virtual Memory should be set to some value between 1.2 GB and 1.5 GB, whereas the Private bytes should be around 0.8 GB to 1 GB. These numbers assume that the application is the only one in the system. Of course, these numbers are quick rules of thumb and do not apply to every case. Different applications have very different memory usage patterns.</p>
 <p><a href="http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/f4e96b27-189c-491f-a941-fec28f5cead1.mspx?mfr=true" target="_blank">Recycling on a Used-Memory Threshold (IIS 6.0)</a></p>
 <p><a href="http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/f4e96b27-189c-491f-a941-fec28f5cead1.mspx?mfr=true" target="_blank">Recycling on a Virtual-Memory Threshold (IIS 6.0)</a></p>

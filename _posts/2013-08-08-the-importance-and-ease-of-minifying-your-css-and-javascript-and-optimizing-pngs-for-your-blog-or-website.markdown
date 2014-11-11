@@ -44,6 +44,7 @@ comments:
     tools.
 ---
 <p>It's important (and useful!) to send as few bytes of CSS and JS and HTML markup down the wire as possible. It's not <strong>just </strong>about size, though, it's also about the <strong>number of requests to get the bits</strong>. In fact, that's often more of a problem then file size.</p>
+<!--more-->
 <h3>First, go run <a href="http://developer.yahoo.com/yslow/">YSlow</a> on your site.</h3><br />
 YSlow such a wonderful tool and it will totally ruin your day and make you feel horrible about yourself and your site. ;) But you can work through that. Eek. First, my images are huge. I've also <strong>got 184k of JS, 21k of CSS and 30k of markup. </strong>Note my favicon is small. It was&nbsp; LOT bigger before and <a href="http://www.hanselman.com/blog/FavIconicoCanBeABandwidthHog.aspx">even sucked up gigabytes of bandwidth a few years back</a>. YSlow also tells me that I am making folks make too many HTTP requests:</p>
 <blockquote><p><em>This page has 33 external JavaScript scripts. Try combining them into one. This page has 5 external stylesheets. Try combining them into one.</em></blockquote><br />

@@ -33,6 +33,7 @@ comments: []
 5. Review the trace with Notepad or any Text editor.</p>
 <p>NOTE: The Identity of the&nbsp; IIS application pool will require write access to the&nbsp; log location&nbsp; c:\Temp in this example:</p>
 <p>This type of tracing is process bitness specific, so if you are looking at a 32 bit process running from 64 bit OS, you need to use: c:\windows\syswow64\cmd.exe, rather than using the regular 64 bit cmd.exe (start a run a cmd.exe)</p>
+<!--more-->
 <h1>Windows 2008 R2</h1></p>
 <h3>Method 1</h3><br />
 This method will output the Winhttp API calls , but not raw data for network communication. From a command prompt run the following command:</p>

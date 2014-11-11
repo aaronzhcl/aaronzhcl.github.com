@@ -26,6 +26,7 @@ comments: []
 <p><strong><a href="http://www.microsoft.com/en-us/download/details.aspx?id=21820" target="_blank">Troubleshooting Kerberos Errors</a></strong></p>
 <p>Outlines basic troubleshooting strategies. Summarizes issues that typically cause problems with Kerberos authentication. Lists Kerberos error messages, possible causes, and possible resolutions. Describes tools commonly used to troubleshoot Kerberos authentication problems.</p>
 <p><strong><a href="http://www.microsoft.com/en-us/download/details.aspx?id=4754" target="_blank">Troubleshooting Kerberos Delegation</a></strong></p>
+<!--more-->
 <p>Explains how to troubleshoot delegation issues that can arise in Kerberos authentication scenarios. Summarizes required infrastructure and describes Windows authentication scenarios. Appendices detail diagnostic tools and examples of IIS to SQL delegation scenarios.</p>
 <p><a href="http://blogs.msdn.com/b/asiatech/archive/2011/10/26/iis-7-kerberos-authentication-failure-krb-ap-err-modified.aspx"><strong>Troubleshooting Kerberos Authentication Issue</strong></a><br />
 Published on Oct 25, 2011 by Wei Zhao</p>

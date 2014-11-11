@@ -59,6 +59,7 @@ Exception message: Request timed out.<br />
 </code><br />
 This kind of issue is typically occurs when the ASP.NET request executes for a period of time longer than the maximum timeout period allowed for server-side code execution.</p>
 <p>This maximum timeout period can be set by executionTimeout attribute of httpRuntime element in config file. (The default value is 110 seconds in .Net 4.0)</p>
+<!--more-->
 <p><a href="http://blogs.msdn.com/b/asiatech/archive/2012/08/27/httpexception-request-timed-out-error-occurs-even-if-executiontimeout-attribute-is-set-to-a-large-value.aspx" target="_blank"><strong>HttpException &ldquo;Request timed out&rdquo; error occurs even if executionTimeout attribute is set to a large value</strong></a><br />
 By XinJin</p>
 <p><code>Request timed out.<br />

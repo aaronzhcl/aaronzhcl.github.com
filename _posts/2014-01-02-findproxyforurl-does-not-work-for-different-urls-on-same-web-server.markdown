@@ -25,6 +25,7 @@ tags:
 comments: []
 ---
 <p>You may find your original auto proxy configuration script (wpad or pac file) is not working for different urls on same web server&nbsp;using <strong>shExpMatch </strong>in IE9+. This is because a performance enhancement named Automatic Proxy Result Cache are introduced.</p>
+<!--more-->
 <p>When you configure Internet Explorer to use an automatic proxy configuration script, it caches the proxy that is returned by the FindProxyForURL call. The caching mechanism (Automatic Proxy Result Cache) is performed on a host basis (that is, not on an URL basis). This prevents you from using different proxies to gain access to the same Web server.</p>
 <p>If you have to use different proxy configuration by urls, you can use the following methods to disable Automatic Proxy Result Cache.</p>
 <h3 id="tocHeadRef">Method 1: Modify the registry</h3><br />

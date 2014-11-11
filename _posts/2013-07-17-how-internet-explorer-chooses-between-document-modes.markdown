@@ -23,6 +23,7 @@ tags:
 comments: []
 ---
 <p>By default, Windows Internet Explorer 8 uses IE8 mode, Windows Internet Explorer 9 uses IE9 mode, etc. However, Windows Internet Explorer uses several criteria to determine which document mode to use. For example, if an HTML page contains a valid&nbsp;<code><!DOCTYPE></code>&nbsp;declaration (see&nbsp;<a href="http://go.microsoft.com/fwlink/?LinkId=89880" target="_blank">[HTML]</a>), Internet Explorer uses one of the standards-based document modes. But, if there is no valid&nbsp;<code><!DOCTYPE></code>&nbsp;declaration<code>,</code>&nbsp;Internet Explorer uses quirks mode.</p>
+<!--more-->
 <p>The following rules determine how Internet Explorer selects the document mode:</p>
 <ol>
 <li>The&nbsp;<strong>Developer Tools</strong>&nbsp;setting overrides any document mode specified by a webpage. The setting remains active for the lifetime of the tab.</li>

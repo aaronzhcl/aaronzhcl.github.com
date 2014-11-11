@@ -26,6 +26,7 @@ comments: []
 <p><a href="http://support.microsoft.com/kb/183110" target="_blank"><strong>WinInet limits connections per server</strong></a></p>
 <p>WinInet limits connections to a single HTTP 1.0 server to four simultaneous connections. Connections to a single HTTP 1.1 server are limited to two simultaneous connections. <a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html" target="_blank">The HTTP 1.1 specification (RFC2616)</a> mandates the two-connection limit. The four-connection limit for HTTP 1.0 is a self-imposed restriction that coincides with the standard that is used by a number of popular Web browsers.</p>
 <p>The only evidence of this limitation to your application is that calls such as HttpSendRequest and InternetOpenURL appear to take longer to complete because they wait for previous connections to be freed up before their requests are sent.</p>
+<!--more-->
 <p>You can configure WinInet to exceed this limit by creating and setting the following registry entries:</p>
 <p>Note By changing these settings, you cause WinInet to go against the HTTP protocol specification recommendation. You should only do this if absolutely necessary and then you should avoid doing standard Web browsing while these settings are in effect:</p>
 <p><code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings</code><br />

@@ -27,6 +27,7 @@ comments: []
 As RFC2616 recommended,</p>
 <p>Clients that use persistent connections SHOULD limit the number of simultaneous connections that they maintain to a given server. A single-user client SHOULD NOT maintain more than 2 connections with any server or proxy. A proxy SHOULD use up to 2*N connections to another server or proxy, where N is the number of simultaneously active users. These guidelines are intended to improve HTTP response times and avoid congestion.</p>
 <p>This means the client should control the connections on a per host basis. If&nbsp; a website gets resource from multiple hosts (www.host1.com, www.host2.com, www.host3.com ..), the client can open 2 connections for each host name.</p>
+<!--more-->
 <p>Yahoo website performance rules "<a href="http://developer.yahoo.com/performance/rules.html#num_http" target="_blank">Minimize Http Requests</a>" are also recommending website should minimize http requests to server as connections limit might caused resource downloading pending on get connections.</p>
 <h2>Browser Configuration</h2><br />
 Earlier versions of browsers strictly followed this standards and soon they find 2 connections per host are not efficient enough for modern web applications. <a href="http://www.browserscope.org/?category=network" target="_blank">This link</a> provides testing result for connection limits on different versions of browsers.</p>

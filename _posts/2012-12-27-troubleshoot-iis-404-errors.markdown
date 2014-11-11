@@ -25,6 +25,7 @@ comments: []
 <p><strong>IIS 6</strong></p>
 <p><b>404 - Not found.</b>&nbsp;This error may occur if the file that you are trying to access has been moved or deleted. It can also occur if you try to access a file that has a restricted file name extension after you install the URLScan tool. You will see &ldquo;Rejected by URLScan" in the w3svc log files after you install the URLScan tool. In this case, you see "Rejected by URLScan" in the log file entry for that request. For more information, click the following article number to view the article in the Microsoft Knowledge Base:</p>
 <div><a href="http://support.microsoft.com/kb/248033">248033</a>&nbsp;How system administrators can troubleshoot an "HTTP 404 - File not found" error message on a server that is running IIS</div></p>
+<!--more-->
 <ul>
 <li><b>404.1 &ndash; Web Site not accessible on the requested port.&nbsp;</b>This error indicates that the Web site you are trying to access has an IP address that does not accept requests for the port on which this request came. For more information, click the following article number to view the article in the Microsoft Knowledge Base:
 <div><a href="http://support.microsoft.com/kb/248034">248034</a>&nbsp;IIS Error: 404.1 Web Site Not Found</div></li></p>

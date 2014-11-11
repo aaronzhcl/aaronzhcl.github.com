@@ -26,6 +26,7 @@ comments: []
 <p><strong>There was an error while performing this operation.</strong></p>
 <p><strong>Details: Bad Data. (Exception from HRESULT: 0x80090005)</strong></p>
 <p>Usually this is caused by Xcopy the applicationHost.config from one server to another. And on original server you changed the application pool identity to a custom identity. (Advanced Settings > Application Pool Identity > Custom Account).</p>
+<!--more-->
 <p>Initially when you set the application pool identity to a domain account IIS has to keep a local copy of the username and password. So it stores a copy in its applicationHost.config with password encrypted. For the encryption it uses machine specific keys in the iisConfiguration and iisWasKey containers. When the applicationHost.config is moved to a different server IIS can no longer decrypt the settings.</p>
 <p>If you still have the original server available, then the following resolution can be applied,</p>
 <ul>

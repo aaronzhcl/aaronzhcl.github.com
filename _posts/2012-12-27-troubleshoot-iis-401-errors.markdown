@@ -26,6 +26,7 @@ comments: []
 <p><a href="http://support.microsoft.com/kb/907273" target="_blank"><strong>Troubleshooting HTTP 401 errors in IIS</strong></a><br />
 <a href="http://technet.microsoft.com/library/cc786094(v=WS.10).aspx" target="_blank"><strong>401.1 and 401.2-Authentication Problems</strong></a></p>
 <p><strong>IIS 7, IIS 7.5, IIS 8</strong></p>
+<!--more-->
 <table id="MT3" cellspacing="0">
 <tbody>
 <tr>

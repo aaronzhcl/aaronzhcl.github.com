@@ -30,6 +30,7 @@ Covers the build environment and the basics of Output, reading Memory and readin
 Covers the how of Debugger Markup Language (DML)</p>
 <p>Writing a Debugging Tools for Windows Extension - Part 3 - June 2011<br />
 Covers the how and why to use Debugger Clients and Debugger Output Callbacks</p>
+<!--more-->
 <p><a href="http://www.codeproject.com/Articles/6522/Debug-Tutorial-Part-4-Writing-WINDBG-Extensions" target="_blank"><strong>Debug Tutorial Part 4: Writing WINDBG Extensions</strong></a></p>
 <p>By Toby Opferman</p>
 <p>Welcome to the fourth installment of this debugging series. In this installment, we will be getting a bit away from actual debugging for a bit and dive into creating helpful debugging aids. I definitely would never condone writing debugging aids just to write them. I would find a reason to write something, perhaps something you do all the time that gets tedious. Once you have found something you would love to automate, I would then see how you could automate it.</p>

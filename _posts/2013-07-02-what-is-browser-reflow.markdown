@@ -27,6 +27,7 @@ tags:
 comments: []
 ---
 <p>Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document. Because reflow is a user-blocking operation in the browser, it is useful for developers to understand how to improve reflow time and also to understand the effects of various document properties (DOM depth, CSS rule efficiency, different types of style changes) on reflow time. Sometimes reflowing a single element in the document may require reflowing its parent elements and also any elements which follow it.</p>
+<!--more-->
 <p><strong>Minimizing browser reflow</strong></p>
 <p>By Mozilla</p>
 <p><a href="http://www-archive.mozilla.org/newlayout/doc/reflow.html" target="_blank">http://www-archive.mozilla.org/newlayout/doc/reflow.html</a></p>

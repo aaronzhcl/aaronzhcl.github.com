@@ -39,6 +39,7 @@ comments:
 <p><a href="http://blogs.msdn.com/b/webdav_101/archive/2010/06/22/detecting-heap-corruption-using-gflags-and-dumps.aspx" target="_blank"><strong>Detecting Heap Corruption Using GFlags and Dumps</strong></a><br />
 By Dan's WebDAV 101</p>
 <p>One way to check for heap corruption is using gflags.exe in combination with a debugger (you can use ADPlus which will attach a debugger for you) to take a dump. This checking is not a 100% catch-all, however it works fairly well. Using gflags to do this type of check will cause an application (as an example the w3wp.exe for the worker process under IIS for a web application) to crash when there is heap corruption. When a debugger (such as what ADPlus would use) is to the process and there is a detected corruption, a crash dump will be created which can be used to find which module (dll, etc) caused the corruption. There was a similar program in the past called pageheap.exe; however, its functionality has been merged into gflags.exe.</p>
+<!--more-->
 <p><strong><a href="http://blogs.msdn.com/b/carlos/archive/2008/12/10/heap-corruption-a-case-study.aspx" target="_blank">Heap Corruption: A Case Study</a></strong><br />
 By Carlo Colombo</p>
 <p>Memory corruption, in general, is one of the toughest issues to work with. For several reasons:</p>

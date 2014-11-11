@@ -41,6 +41,7 @@ User: N/A<br />
 Computer: MYMACHINE<br />
 Description:<br />
 Faulting application w3wp.exe, version 7.0.6001.18000, time stamp 0x47919413, faulting module kernel32.dll, version 6.0.6001.18000, time stamp 0x4791a76d, exception code 0xe053534f, fault offset 0x000442eb, process id 0x%9, application start time 0x%10.</code></p>
+<!--more-->
 <p><a href="http://blogs.msdn.com/b/tess/archive/2006/04/27/asp-net-2-0-crash-case-study-unhandled-exceptions.aspx" target="_blank"><strong>ASP.NET 2.0 Crash case study: Unhandled exceptions</strong></a><br />
 By Tess Ferrandez</p>
 <p><strong>Problem description</strong><br />

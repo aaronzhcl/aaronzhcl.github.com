@@ -25,6 +25,7 @@ tags:
 comments: []
 ---
 <p>The <a href="http://msdn.microsoft.com/en-us/library/e74a18c4%28VS.71%29.aspx" target="_blank">Assembly Binding Log Viewer</a> displays details for failed assembly binds. This information helps you diagnose why the .NET Framework cannot locate an assembly at run time. These failures are usually the result of an assembly deployed to the wrong location or a mismatch in version numbers or cultures. The common language runtime's failure to locate an assembly typically shows up as a <a href="http://msdn.microsoft.com/en-us/library/system.typeloadexception(v=vs.71).aspx" target="_blank">TypeLoadException</a> in your application.</p>
+<!--more-->
 <p><strong><a href="http://blogs.msdn.com/b/suzcook/archive/2003/05/29/57120.aspx" target="_blank">Debugging Assembly Loading Failures</a></strong><br />
 By Suzanne Cook<br />
 So...you're seeing a FileNotFoundException, FileLoadException, BadImageFormatException or you suspect an assembly loading failure? Try the steps below to start your debugging process.<br />

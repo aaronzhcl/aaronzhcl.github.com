@@ -29,6 +29,7 @@ comments: []
 <p>As documented by <a href="http://support.microsoft.com/kb/q286350" target="_blank">Microsoft KB</a> it is easy to capture crash dump when the application is up and running. However there are cases application crashes during startup. How to capture such crash dump during application startup?</p>
 <!--more-->
 <p>Here are a few ways to achieve the goal.</p><br />
+<!--more-->
 <h2>1. ProcDump</h2>
 <p><a href="http://technet.microsoft.com/en-us/sysinternals/dd996900" target="_blank">ProcDump</a> support a -x parameter launch a process and then monitor it for exceptions:</p>
 <p><strong>-x</strong><br>Launch the specified image with optional arguments. If it is a Modern Application or Package, ProcDump will start on the next activation (only).</p>

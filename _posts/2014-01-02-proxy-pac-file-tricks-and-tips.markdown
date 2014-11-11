@@ -60,6 +60,7 @@ comments:
 As mentioned above, PAC files are case sensitive. If you are seeing issues with upper/lower case URL&rsquo;s it is relatively simple to convert everything to lower case at the top of the PAC file and not have to worry about case later on. To do so, simply put this section somewhere near the top of your PAC file:</p>
 <pre class="brush:js">var lhost = host.toLowerCase();<br />
 host = lhost;</pre></p>
+<!--more-->
 <h1>Effective use of Indentations</h1><br />
 Another fairly simple programming trick is to make sure you effectively use indentations. It makes your PAC file much easier to read and easier to troubleshoot. The very simple rule says "If you are putting something inside braces ( { } ), indent it one more tab stop. Your close brace should be at the same indent level as the item that opened the brace. The only exception to this rule is that you don&rsquo;t need to indent your entire PAC file that&rsquo;s between the "function FindProxyForURL(url, host) {" at the top and the very last closing brace at the bottom. It&rsquo;s safe to cheat here. Just be sure to indent your IF statements and make things line up nicely for readability. You (and your co-workers) will be happy about this later as they can more easily read through the PAC file.</p>
 <p>For a good examples of indenting, see the sample PAC files in the menues to the left.</p>

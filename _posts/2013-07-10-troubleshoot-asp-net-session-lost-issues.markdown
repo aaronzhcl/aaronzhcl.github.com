@@ -25,6 +25,7 @@ tags:
 comments: []
 ---
 <p>ASP.NET session state supports several different storage options for session data. Each option is identified by a value in the <a href="http://msdn.microsoft.com/en-us/library/system.web.sessionstate.sessionstatemode.aspx">SessionStateMode</a> enumeration. The following list describes the available session state modes:</p>
+<!--more-->
 <ul>
 <li><strong>InProc</strong> mode, which stores session state in memory on the Web server. This is the default.</li>
 <li><strong>StateServer</strong> mode, which stores session state in a separate process called the ASP.NET state service. This ensures that session state is preserved if the Web application is restarted and also makes session state available to multiple Web servers in a Web farm.</li>

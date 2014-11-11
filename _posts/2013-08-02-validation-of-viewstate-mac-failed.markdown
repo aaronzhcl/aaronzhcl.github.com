@@ -35,6 +35,7 @@ comments:
 <h1>The symptom</h1><br />
 View state is a feature in ASP.NET that allows pages to automatically preserve state without relying on server state (for example, session state). However, issues relating to view state can be difficult to debug. In most cases, when problems with view state occur, you receive the following error message in the Web browser, with little indication of what might be causing the issue:</p>
 <blockquote><p>"The viewstate is invalid for this page and might be corrupted"</p>
+<!--more-->
 <p>Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.</blockquote></p>
 <h1>The theory</h1><br />
 This section is from <a href="http://msdn.microsoft.com/en-us/magazine/ff797918.aspx" target="_blank">http://msdn.microsoft.com/en-us/magazine/ff797918.aspx</a></p>

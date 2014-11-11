@@ -30,6 +30,7 @@ comments: []
 By Jim Cheshire</p>
 <p>When the .NET Framework was first released, many developers believed the introduction of the garbage collector meant never having to worry about memory management ever again. In fact, while the garbage collector is efficient in managing memory in a managed application, it's still possible for an application's design to cause memory problems.</p>
 <p>One of the more common issues we see regarding memory involves System.OutOfMemoryExceptions. After years of helping developers troubleshoot OutOfMemoryExceptions, we've accumulated a short list of the more common causes of these exceptions. Before I go over that list, it's important to first understand the cause of an OutOfMemoryException from a 30,000 foot view.</p>
+<!--more-->
 <p><strong><a href="http://www.iis.net/learn/troubleshoot/performance-issues/troubleshooting-native-memory-leak-in-an-iis-7x-application-pool" target="_blank">Troubleshooting native memory leak in an IIS 7.x Application Pool</a></strong><br />
 Published on April 9, 2012 by Apurva Joshi</p>
 <p>This troubleshooter will help you to identify the cause of native memory leak in an IIS application pool. It&rsquo;s important to keep in mind that it is normal for high memory allocation as a web application serves requests. However, if you consistently see both Process\Private Bytes and Process\Virtual Bytes are increasing or Process\Private Bytes and Process\Working Set are increasing and Memory\Available Bytes is decreasing, the memory leak will occur and it may cause an out-of-memory exception.</p>
