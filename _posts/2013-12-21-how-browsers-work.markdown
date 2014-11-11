@@ -65,11 +65,13 @@ This comprehensive primer on the internal operations of WebKit and Gecko is the 
 <blockquote><p>In the years of IE 90% dominance there was nothing much to do but regard the browser as a "black box", but now, with open source browsers having <a href="http://techcrunch.com/2011/08/01/open-web-browsers/">more than half of the usage share</a>, it's a good time to take a peek under the engine's hood and see what's inside a web browser. Well, what's inside are millions of C++ lines...</blockquote><br />
 Tali published her research on <a href="http://taligarsiel.com/">her site</a>, but we knew it deserved a larger audience, so we've cleaned it up and republished it here.As a web developer, <strong>learning the internals of browser operations helps you make better decisions and know the justifications behind development best practices</strong>. While this is a rather lengthy document, we recommend you spend some time digging in; we guarantee you'll be glad you did. <cite>Paul Irish, Chrome Developer Relations</cite></p>
 <div>
-<!--more-->
 <p>This article has been <a href="http://helloworld.naver.com/helloworld/59361">translated into Korean</a> by the community. HTML5 Rocks hosts the <a href="http://www.html5rocks.com/de/tutorials/internals/howbrowserswork/">German</a>, <a href="http://www.html5rocks.com/es/tutorials/internals/howbrowserswork/">Spanish</a>, <a href="http://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">Japanese</a>, <a href="http://www.html5rocks.com/pt/tutorials/internals/howbrowserswork/">Portuguese</a>, <a href="http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/">Russian</a> and <a href="http://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/">Simplified Chinese</a> versions.</p>
-<p>You can also watch <a href="http://vimeo.com/44182484">Tali Garsiel give a talk on this topic</a> on Vimeo.</p>
+<p>You can also watch <a href="http://vimeo.com/44182484">Tali Garsiel give a talk on this topic</a> on Video.</p>
 <p></div><br />
 </div></p>
+
+<!--more-->
+
 <hr />
 <h2 id="Introduction">Introduction</h2><br />
 Web browsers are the most widely used software. In this primer, I will explain how they work behind the scenes. We will see what happens when you type <code>google.com</code> in the address bar until you see the Google page on the browser screen.</p>
