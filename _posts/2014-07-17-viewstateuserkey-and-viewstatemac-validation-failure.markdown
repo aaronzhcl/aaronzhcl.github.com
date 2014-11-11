@@ -24,7 +24,7 @@ tags:
 comments: []
 ---
 <p>Previously I have <a href="http://webdebug.net/2013/08/validation-of-viewstate-mac-failed/" target="_blank">posted on the validation of viewstate MAC failure</a>. We already know that the validationKey and validation algorithm need to be the same across all the servers in a load-balanced environment. But user still see viewState validation failures in event logs.</p>
-<p>&nbsp;</p><br />
+<!--more-->
 <h1>ViewStateUserKey</h1>
 <p>There is another factor that could be playing in the middle. That is the <strong>ViewStateUserKey</strong>. Microsoft&reg; ASP.NET version 1.1 added an additional <code>Page</code> class property&mdash;<code>ViewStateUserKey</code>. This property, if used, must be assigned a string value in the initialization stage of the page life cycle (in the <code>Page_Init</code> event handler). The point of the property is to assign some user-specific key to the view state, such as a username. The <code>ViewStateUserKey</code>, if provided, is used as <a href="http://www.dotnetjunkies.com/Tutorial/77D4AFDC-585D-4539-A364-30028327FF14.dcik">a salt to the hash</a> during the MAC.</p>
 <p>What the <code>ViewStateUserKey</code> property protects against is the case where a nefarious user visits a page, gathers the view state, and then entices a user to visit the same page, passing in their view state. </p>

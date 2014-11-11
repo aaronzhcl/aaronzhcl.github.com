@@ -48,6 +48,7 @@ comments:
 <li>In the <strong>Debugger</strong> text box, type the full path of the debugger that you want to use. For example, if you want to use the WinDbg debugger to debug a service, you can type a full path that is similar to the following: C:\Program Files\Debugging Tools for Windows\windbg.exe
 <li>Click <strong>Apply</strong>, and then click <strong>OK</strong> to quit the Global Flags Editor.</li></ol>
 <li>
+<!--more-->
 <h6>Method 2: Use Registry Editor</h6>
 <ol>
 <li>Click <strong>Start</strong>, and then click <strong>Run</strong>. The <strong>Run</strong> dialog box appears.
