@@ -28,11 +28,11 @@ comments: []
 <div class="codeSnippetContainerCodeContainer">
 <div id="CodeSnippetContainerCode_aaac4877-ae04-43bb-97d7-7fa2d7264e51" class="codeSnippetContainerCode" dir="ltr">
 <div style="color: black;">
-<pre><configuration><br />
-  <system.web><br />
-    <identity impersonate="true" /><br />
-  </system.web><br />
-</configuration><br />
+<pre>&lt;configuration&gt;
+  &lt;system.web&gt;
+    &lt;identity impersonate=&quot;true&quot; /&gt;
+  &lt;/system.web&gt;
+&lt;/configuration&gt;
 </pre><br />
 Impersonation is independent of the authentication <span class="input">mode</span> configured using the <a href="http://msdn.microsoft.com/en-us/library/vstudio/532aee0e(v=vs.100).aspx">authentication</a> configuration element. The authentication element is used to determine the <a href="http://msdn.microsoft.com/en-us/library/vstudio/system.web.httpcontext.user(v=vs.100).aspx">User</a> property of the current <a href="http://msdn.microsoft.com/en-us/library/vstudio/system.web.httpcontext(v=vs.100).aspx">HttpContext</a>. Impersonation is used to determine the <a href="http://msdn.microsoft.com/en-us/library/vstudio/system.security.principal.windowsidentity(v=vs.100).aspx">WindowsIdentity</a> of the ASP.NET application.</p>
 <p>Table below shows the resulting identities that are obtained from the various identity properties available to ASP.NET application code when your application uses Windows authentication and IIS is configured to use Integrated Windows authentication.</p>
