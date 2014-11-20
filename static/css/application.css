@@ -19,6 +19,7 @@ pre {
   box-shadow: 4px 4px 4px #888;
   padding: 4px;
   overflow: auto;
+  line-height: 0.8;
 }
 ::selection {
   background: #c3e99e;
