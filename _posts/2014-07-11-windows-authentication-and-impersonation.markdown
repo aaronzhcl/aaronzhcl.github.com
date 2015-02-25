@@ -39,46 +39,46 @@ Impersonation is independent of the authentication <span class="input">mode</spa
 <table class="table">
 <tbody>
 <tr>
-<th>Web.config settings</th></p>
-<th>Variable location</th></p>
+<th>Web.config settings</th>
+<th>Variable location</th>
 <th>Resultant identity</th><br />
-</tr></p>
+</tr>
 <tr>
 <td><identity impersonate="true"/><br />
-< authentication mode="Windows" /></td></p>
+< authentication mode="Windows" /></td>
 <td>HttpContext<br />
 WindowsIdentity<br />
-Thread</td></p>
+Thread</td>
 <td>Domain\UserName<br />
 Domain\UserName<br />
 Domain\UserName</td><br />
-</tr></p>
+</tr>
 <tr>
 <td><identity impersonate="false"/><br />
-< authentication mode="Windows" /></td></p>
+< authentication mode="Windows" /></td>
 <td>HttpContext<br />
 WindowsIdentity<br />
-Thread</td></p>
+Thread</td>
 <td>Domain\UserName<br />
 NT AUTHORITY\NETWORK SERVICE<br />
 Domain\UserName</td><br />
-</tr></p>
+</tr>
 <tr>
 <td><identity impersonate="true"/><br />
-< authentication mode="Forms" /></td></p>
+< authentication mode="Forms" /></td>
 <td>HttpContext<br />
 WindowsIdentity<br />
-Thread</td></p>
+Thread</td>
 <td>Name provided by user<br />
 Domain\UserName<br />
 Name provided by user</td><br />
-</tr></p>
+</tr>
 <tr>
 <td><identity impersonate="false"/><br />
-< authentication mode="Forms" /></td></p>
+< authentication mode="Forms" /></td>
 <td>HttpContext<br />
 WindowsIdentity<br />
-Thread</td></p>
+Thread</td>
 <td>Name provided by user<br />
 NT AUTHORITY\NETWORK SERVICE<br />
 Name provided by user</td><br />
