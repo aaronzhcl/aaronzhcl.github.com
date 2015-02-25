@@ -41,7 +41,7 @@ Impersonation is independent of the authentication <span class="input">mode</spa
 <tr>
 <th>Web.config settings</th>
 <th>Variable location</th>
-<th>Resultant identity</th><br />
+<th>Resultant identity</th>
 </tr>
 <tr>
 <td><identity impersonate="true"/><br />
@@ -51,7 +51,7 @@ WindowsIdentity<br />
 Thread</td>
 <td>Domain\UserName<br />
 Domain\UserName<br />
-Domain\UserName</td><br />
+Domain\UserName</td>
 </tr>
 <tr>
 <td><identity impersonate="false"/><br />
@@ -61,7 +61,7 @@ WindowsIdentity<br />
 Thread</td>
 <td>Domain\UserName<br />
 NT AUTHORITY\NETWORK SERVICE<br />
-Domain\UserName</td><br />
+Domain\UserName</td>
 </tr>
 <tr>
 <td><identity impersonate="true"/><br />
@@ -71,8 +71,7 @@ WindowsIdentity<br />
 Thread</td>
 <td>Name provided by user<br />
 Domain\UserName<br />
-Name provided by user</td><br />
-</tr>
+Name provided by user</td></tr>
 <tr>
 <td><identity impersonate="false"/><br />
 < authentication mode="Forms" /></td>
@@ -81,10 +80,10 @@ WindowsIdentity<br />
 Thread</td>
 <td>Name provided by user<br />
 NT AUTHORITY\NETWORK SERVICE<br />
-Name provided by user</td><br />
-</tr><br />
-</tbody><br />
-</table><br />
+Name provided by user</td>
+</tr>
+</tbody>
+</table>
 You can check how to configure Impersonation in IIS in this article.</p>
 <p><a href="http://technet.microsoft.com/en-us/library/cc730708(v=ws.10).aspx" target="_blank">http://technet.microsoft.com/en-us/library/cc730708(v=ws.10).aspx</a></p>
 <h1></h1></p>
