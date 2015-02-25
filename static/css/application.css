@@ -297,6 +297,9 @@ h3 {
     font-size:2.5em;
     font-weight:600;
 }
+#project_tagline{
+  font-style: italic;
+}
 #nav-search{
   float:right;
   margin-top:15px;
