@@ -25,12 +25,12 @@ comments: []
 ---
 <p>Previously I have <a href="http://webdebug.net/2013/08/validation-of-viewstate-mac-failed/" target="_blank">posted on the validation of viewstate MAC failure</a>. We already know that the validationKey and validation algorithm need to be the same across all the servers in a load-balanced environment. But user still see viewState validation failures in event logs.</p>
 <!--more-->
-<h1>ViewStateUserKey</h1>
+<h2>ViewStateUserKey</h2>
 <p>There is another factor that could be playing in the middle. That is the <strong>ViewStateUserKey</strong>. Microsoft&reg; ASP.NET version 1.1 added an additional <code>Page</code> class property&mdash;<code>ViewStateUserKey</code>. This property, if used, must be assigned a string value in the initialization stage of the page life cycle (in the <code>Page_Init</code> event handler). The point of the property is to assign some user-specific key to the view state, such as a username. The <code>ViewStateUserKey</code>, if provided, is used as <a href="http://www.dotnetjunkies.com/Tutorial/77D4AFDC-585D-4539-A364-30028327FF14.dcik">a salt to the hash</a> during the MAC.</p>
 <p>What the <code>ViewStateUserKey</code> property protects against is the case where a nefarious user visits a page, gathers the view state, and then entices a user to visit the same page, passing in their view state. </p>
 <p><img title="ms972976.viewstate_fig10(en-us,MSDN.10).gif" alt="ms972976.viewstate_fig10(en-us,MSDN.10).gif" src="http://i.msdn.microsoft.com/dynimg/IC161589.gif"></p>
 <p>&nbsp;</p><br />
-<h1>ASP.NET Implementation</h1>
+<h2>ASP.NET Implementation</h2>
 <p>If we reflect the System.Web.dll and look into the implementation, we will see the method below is taking ViewStateUserKey as a hash modifier which combines with validationKey to compute the hash for the viewstate.</p>
 <pre class="brush:csharp">// System.Web.UI.ObjectStateFormatter<br />
 private byte[] GetMacKeyModifier()<br />
@@ -81,7 +81,7 @@ private static byte[] HashDataUsingNonKeyedAlgorithm(HashAlgorithm hashAlgo, byt
     return array2;<br />
 }<br />
 </pre></p>
-<h1>Resolution</h1></p>
+<h2>Resolution</h2></p>
 <p>Usually we would set the ViewStateUserKey are set to sessionID during the page_init stage, that works well in a single server, however in a load-balanced server environment, we need to make sure the sessionID for one user is consistent across all the servers,</p></p>
 <ul>
 <li>Make sure the servers are using the same state server
@@ -95,7 +95,7 @@ private static byte[] HashDataUsingNonKeyedAlgorithm(HashAlgorithm hashAlgo, byt
 }<br />
 </pre></p>
 <p>&nbsp;</p></p>
-<h1>Reference</h1></p>
+<h2>Reference</h2></p>
 <p><strong>Understanding ASP.NET View State</strong></p></p>
 <p><a title="http://msdn.microsoft.com/library/ms972976.aspx" href="http://msdn.microsoft.com/library/ms972976.aspx" target="_blank">http://msdn.microsoft.com/library/ms972976.aspx</a></p></p>
 <p><strong>Take Advantage of ASP.NET Built-in Features to Fend Off Web Attacks</strong></p></p>

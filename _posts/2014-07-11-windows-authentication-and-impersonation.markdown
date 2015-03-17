@@ -86,8 +86,8 @@ Name provided by user</td>
 </table>
 You can check how to configure Impersonation in IIS in this article.</p>
 <p><a href="http://technet.microsoft.com/en-us/library/cc730708(v=ws.10).aspx" target="_blank">http://technet.microsoft.com/en-us/library/cc730708(v=ws.10).aspx</a></p>
-<h1></h1></p>
-<h1>Reference</h1><br />
+<h2></h2></p>
+<h2>Reference</h2><br />
 <strong>Explained: Windows Authentication in ASP.NET 2.0</strong></p>
 <p><a href="Explained:%20Windows Authentication in ASP.NET 2.0" target="_blank">http://msdn.microsoft.com/en-us/library/ff647076.aspx</a></p>
 <p><strong>Using IIS Authentication with ASP.NET Impersonation</strong></p>

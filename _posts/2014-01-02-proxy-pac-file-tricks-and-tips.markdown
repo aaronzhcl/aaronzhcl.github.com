@@ -56,32 +56,32 @@ comments:
   content: "It's very effortless to find out any topic on web as compared to textbooks,
     as I found \r\nthis piece of writing at this web page."
 ---
-<h1><img class="alignright" alt="" src="http://blogs.msdn.com/blogfiles/askie/WindowsLiveWriter/AutomaticProxyConfigurationScriptfailing_C281/clip_image002_2.jpg" width="384" height="332" />Dealing with Case Sensitivity</h1><br />
+<h2><img class="alignright" alt="" src="http://blogs.msdn.com/blogfiles/askie/WindowsLiveWriter/AutomaticProxyConfigurationScriptfailing_C281/clip_image002_2.jpg" width="384" height="332" />Dealing with Case Sensitivity</h2><br />
 As mentioned above, PAC files are case sensitive. If you are seeing issues with upper/lower case URL&rsquo;s it is relatively simple to convert everything to lower case at the top of the PAC file and not have to worry about case later on. To do so, simply put this section somewhere near the top of your PAC file:</p>
 <pre class="brush:js">var lhost = host.toLowerCase();<br />
 host = lhost;</pre></p>
 <!--more-->
-<h1>Effective use of Indentations</h1><br />
+<h2>Effective use of Indentations</h2><br />
 Another fairly simple programming trick is to make sure you effectively use indentations. It makes your PAC file much easier to read and easier to troubleshoot. The very simple rule says "If you are putting something inside braces ( { } ), indent it one more tab stop. Your close brace should be at the same indent level as the item that opened the brace. The only exception to this rule is that you don&rsquo;t need to indent your entire PAC file that&rsquo;s between the "function FindProxyForURL(url, host) {" at the top and the very last closing brace at the bottom. It&rsquo;s safe to cheat here. Just be sure to indent your IF statements and make things line up nicely for readability. You (and your co-workers) will be happy about this later as they can more easily read through the PAC file.</p>
 <p>For a good examples of indenting, see the sample PAC files in the menues to the left.</p>
-<h1>Dealing with localhost and loopback addresses</h1><br />
+<h2>Dealing with localhost and loopback addresses</h2><br />
 Localhost and loopback should always bypass the proxy &ndash; Put this near the top of your PAC file.</p>
 <pre class="brush:js">if ((host == "localhost") ||<br />
 (shExpMatch(host, "localhost.*")) ||<br />
 (host == "127.0.0.1")) {<br />
 return "DIRECT";</pre></p>
-<h1>Safely Blocking Sites at the Browser Instead of the Proxy</h1><br />
+<h2>Safely Blocking Sites at the Browser Instead of the Proxy</h2><br />
 Blocking sites is also handy. This can be done for a number of reasons &ndash; Spyware/malware sites are very good examples Blocking these sites can be done very easily &ndash; Simply return a proxy value somewhere on a loopback address so that the requests never actually leave the local machine to take up network bandwidth. The only caveat with this is to ensure that your selection of port number isn&rsquo;t actually listening on the PC which could odd behavior.</p>
 <pre class="brush:js">if (dnsDomainIs(host, ".badspyware.com") ||<br />
 dnsDomainIs(host, ".worsespyware2.com")) {<br />
 return "PROXY 127.0.0.1:48890";<br />
 }</pre></p>
-<h1>Using alert() for Notifications and Troubleshooting</h1><br />
+<h2>Using alert() for Notifications and Troubleshooting</h2><br />
 Alert() can be used very effectively to help troubleshooting browser issues, especially the one mentioned above where the browser occasionally picks the wrong IP for myIpAddress(). For this, pick a bogus hostname &ndash; proxyinfo.company.com would work fine. It doesn&rsquo;t have to be in DNS or registered anywhere &ndash; Just placing it in the PAC file is all you need. Be aware, however that the alert message is displayed with EVERY request that matches the condition. If you accidentally get an alert in the wrong place it can be very annoying and render the browser nearly useless. Used properly, however, it can be VERY handy.</p>
 <pre class="brush:js">if ((host =="proxyinfo.company.com")) {<br />
 alert("Local IP address is: " + myIpAddress());<br />
 }</pre></p>
-<h1>Using Variables</h1><br />
+<h2>Using Variables</h2><br />
 Using variables within a PAC file can be an extremely powerful way to simplify your PAC file. You can create variables to hold almost any value - A client's IP address, a proxy server address, a true/false value, etc. This variable can be read and reset at any point in the PAC file.</p>
 <p>To use a variable, all you need to do is set it to a value. For example, to set a variable called "myip", enter the following near the top of your PAC file.</p>
 <pre class="brush:js">myip = myIpAddress();</pre><br />
@@ -105,7 +105,7 @@ proxy = "PROXY ny-proxy.company.com:8000";<br />
 When writing this kind of PAC file, remember to start with the most generic and get to the most specific. If you need to route a single /24 to a specific proxy, do it AFTER you&rsquo;re done routing the /16&rsquo;s. Pay attention to where the variable gets set and make sure it doesn&rsquo;t get overwritten later.</p>
 <p>When you have reached a point in your PAC file that you need to return a proxy value, you just return the variable, as shown below.</p>
 <p>return proxy;</p>
-<h1>Safely using IsInNet(host, &hellip;)</h1><br />
+<h2>Safely using IsInNet(host, &hellip;)</h2><br />
 It is very useful to use isInNet(host., &hellip;.), especially when the host is an IP address and you&rsquo;re trying to match it. For example, you might need to send all traffic in the 10.0.0.0/8 and 192.168.0.0/16 address spaces browser direct but all other direct IP&rsquo;s via the proxy. Unfortunately, just using IsInNet(host, &hellip;) alone causes problems, discussed the Lessons Learned article.</p>
 <p>Fortunately, there is a way around it: Write an IF statement that uses a regex check to see if the host is an IP address then use IsInNet(host, &hellip;) to check to see if it&rsquo;s in a specific subnet. Example:</p>
 <pre class="brush:js">reip = /^\d+\.\d+\.\d+\.\d+$/g;<br />
@@ -123,7 +123,7 @@ return "DIRECT";<br />
 }<br />
 }</pre><br />
 You can also use simple regex matches for your IP space, but this is far more elegant and effective, especially if you&rsquo;re testing multiple subnets.</p>
-<h1>Using Substrings</h1><br />
+<h2>Using Substrings</h2><br />
 It is possible to check only a specified range of characters within the URL or within the host variable. This is referred to as a substring. It can be extremely handy for many things. One of the most common ways to use a substring is to check what protocol it is. This might be handy, for example, if you have a configuration where you have a separate proxy for different protocols &ndash; i.e. HTTP requests go to the main company proxy, ftp requests go to the FTP relay and MMS links go to the streaming infrastructure. One important note on substrings - Because of IE's Automatic Proxy Results Cache (See the Lessons Learned section for details) the browser only queries the PAC file once per host and caches that result. Be sure to consider this when using substrings.</p>
 <p>Using substrings is fairly simple. The syntax is &ldquo;varname.substring(begin,end)&rdquo; where varname is the text-based variable (i.e. host or url) that you want to check, begin is where the substring starts and end is where it finishes. Keep in mind that the first character in a string is position #0, not #1 as you might expect.</p>
 <p>Examples:</p>
@@ -131,7 +131,7 @@ It is possible to check only a specified range of characters within the URL or w
 if (url.substring(0,3) == "ftp")  { return "PROXY ftp-proxy.company.com:8000"; }  //matches FTP:// links<br />
 if (url.substring(0,3) == "mms") { return "PROXY http-proxy.company.com:8000"; }  //matches MMS links</pre><br />
 This is only one way to use substrings &ndash; If you can find a consistent character position within the URL you can split it out and look at it.</p>
-<h1>Advanced JavaScript Ideas</h1><br />
+<h2>Advanced JavaScript Ideas</h2><br />
 This guide is focused on the things that I&rsquo;ve found are useful when writing PAC files. That isn&rsquo;t to say that it covers everything you might need to do. JavaScript is a complex language with a lot of very powerful features. You can use nearly all of them within a PAC file. Don&rsquo;t let this (or any other such guide) limit you to what you can try. Dig into a JavaScript reference and experiment a bit with some of the more advanced features. Think about some of the string manipulation features (length, used in combination with substring, for example), using arrays, writing your own reusable subroutines within the PAC file, etc.</p>
 <p>Here&rsquo;s a non-real-world example to get you thinking about what you could do...</p>
 <p>Let&rsquo;s say your company has fifty office buildings. Each one is assigned a /16 in 10.x &ndash; 10.1.0.0/16, 10.2.0.0/16, etc. Each floor gets a range of ten /24 subnets. Floor 1 is .10 -.19, floor 2 is .20-29, etc. In each building, the executives are placed on the 20th floor. So, their subnet range is .200 - .209. An executive in building #13 might be assigned an IP address of 10.13.202.84.</p>
@@ -154,7 +154,7 @@ You now have an array variable called "octects" that is the different octects of
 Now, the variable "firstoctet" will contain the number 192, not the string "192". This new variable can use any type of math function, greater/less than compares, etc.<br />
 These are just a few example &ndash; If you can think of something you need to do, it&rsquo;s probably possible to do it. Need to block all &ldquo;.pif&rdquo; files? Use the url.length-3 as the beginning of your url.substring and url.length as the end of it &ndash; Is the substring &ldquo;pif&rdquo;? If so, send it to a loopback address, like a spyware block. Don&rsquo;t be afraid to dig in and experiment.</p>
 <p>It is, of course, important to add the standard caveat &ndash; Assume that you&rsquo;re going to get hit by a bus tomorrow. Make sure that someone else can support your PAC file. Document it, add appropriate comments, etc. and follow the golden rule - Keep It Simple and Supportable! A PAC file is not the place to be writing obfuscated JavaScript!</p>
-<h1>Proxy Load Balancing within a PAC File</h1><br />
+<h2>Proxy Load Balancing within a PAC File</h2><br />
 Many organizations have multiple proxy servers in the same location without a hardware load balancer to distribute traffic. This section provides a method to load balance traffic between two proxies by looking at the last octect of the users' IP address. Addresses with even numbers go to one proxy, addresses with odd numbers go to another. This includes failover, should one proxy become non-responsive. PAC-file based proxy failover can have it's challenges (as noted in the Lessons Learned section) but is perfectly acceptable to use here.</p>
 <p>This section is based on a document by a Novell BorderManager guru named Shawn Pond and is used with his permission. It is simple, logical and easy to implement. His original document can be found at <a href="http://www.novell.com/coolsolutions/feature/7949.html">www.novell.com/coolsolutions/feature/7949.html</a>.</p>
 <p>First, the PAC file code:</p>

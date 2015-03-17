@@ -23,7 +23,7 @@ tags:
 comments: []
 ---
 <p>Since&nbsp; there are multiple ways to gather this in the Windows 2008 and 2008R2 I thought this might be helpful to outline this for the different platforms and how to gather this for fellow ARR troubleshooters.</p>
-<h1>Windows 2008</h1><br />
+<h2>Windows 2008</h2><br />
 1. Start the Tracing . From a command prompt run the following command:</p>
 <blockquote><p>netsh winhttp set tracing trace-file-prefix="C:\TEMP\WinHttpLog" level=verbose format=hex state=enabled max-trace-file-size=1048576000</blockquote><br />
 2.Recycle the IIS Application Pool.</p>
@@ -34,7 +34,7 @@ comments: []
 <p>NOTE: The Identity of the&nbsp; IIS application pool will require write access to the&nbsp; log location&nbsp; c:\Temp in this example:</p>
 <p>This type of tracing is process bitness specific, so if you are looking at a 32 bit process running from 64 bit OS, you need to use: c:\windows\syswow64\cmd.exe, rather than using the regular 64 bit cmd.exe (start a run a cmd.exe)</p>
 <!--more-->
-<h1>Windows 2008 R2</h1></p>
+<h2>Windows 2008 R2</h2></p>
 <h3>Method 1</h3><br />
 This method will output the Winhttp API calls , but not raw data for network communication. From a command prompt run the following command:</p>
 <p>1. Start the tracing</p>

@@ -32,12 +32,12 @@ comments:
   content: '[&#8230;] I have posted on the validation of viewstate MAC failure. We
     already know that the validationKey and validation [&#8230;]'
 ---
-<h1>The symptom</h1><br />
+<h2>The symptom</h2><br />
 View state is a feature in ASP.NET that allows pages to automatically preserve state without relying on server state (for example, session state). However, issues relating to view state can be difficult to debug. In most cases, when problems with view state occur, you receive the following error message in the Web browser, with little indication of what might be causing the issue:</p>
 <blockquote><p>"The viewstate is invalid for this page and might be corrupted"</p>
 <!--more-->
 <p>Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.</blockquote></p>
-<h1>The theory</h1><br />
+<h2>The theory</h2><br />
 This section is from <a href="http://msdn.microsoft.com/en-us/magazine/ff797918.aspx" target="_blank">http://msdn.microsoft.com/en-us/magazine/ff797918.aspx</a></p>
 <p>The ASP.NET feature to apply a MAC is called EnableViewStateMac, and just like ViewStateEncryptionMode, you can apply it either through a page directive or through the application&rsquo;s web.config file:</p>
 <div id="ctl00_MTContentSelector1_mainContentContainer_ctl11_" class="libCScode">
@@ -74,7 +74,7 @@ Whenever this page is posted back to the server, the page code validates the inc
 <p><img title="Figure 3 Applying a Message Authentication Code (MAC)" src="http://i.msdn.microsoft.com/ff797918.Sullivan_Figure3_hires%28en-us,MSDN.10%29.png" alt="" align="Middle" /></p>
 <p><strong>Applying a Message Authentication Code (MAC)</strong></p>
 <p>The security of this system lies in the secrecy of the secret key value. This value is always stored on the server, either in memory or in a configuration file (more on this later)&mdash;it is never written to the page. Without knowing the key, there would be no way for an attacker to compute a valid view state hash.</p>
-<h1>The configuration</h1><br />
+<h2>The configuration</h2><br />
 The <strong>ValidationKey</strong> property is used when <strong>enableViewStateMAC</strong> is <strong>true</strong> to create a message authentication code (MAC) to enable ASP.NET to determine whether view state has been tampered with. The <strong>ValidationKey</strong> property is also used to generate out-of-process, application-specific session IDs to ensure that session state variables are isolated between applications.</p>
 <p>Use the "<strong>AutoGenerate</strong>" option to specify that ASP.NET generates a random key and stores it in the Local Security Authority. The "<strong>AutoGenerate</strong>" option is part of the default value.</p>
 <p>If you add the "<strong>IsolateApps</strong>" modifier to the "<strong>AutoGenerate</strong>" <strong>ValidationKey</strong> value, ASP.NET generates a unique encrypted key for each application by using each application's <a href="http://msdn.microsoft.com/en-us/library/system.web.httpruntime.appdomainappvirtualpath.aspx">AppDomainAppVirtualPath</a>. This is the default setting.</p>
@@ -82,10 +82,10 @@ The <strong>ValidationKey</strong> property is used when <strong>enableViewState
 <p>If you need to support configuration across a network of Web servers (a Web farm), set the ValidationKey property manually to ensure consistent configuration.</p>
 <p>This property is typically set declaratively in the validationKey attribute of the <a href="http://msdn.microsoft.com/en-us/library/w8h3skw9.aspx">machineKey</a> element of the Web.config file.</p>
 <p>For more information about the machineKey configuration, refer to <a title="How To: Configure MachineKey in ASP.NET 2.0" href="http://msdn.microsoft.com/en-us/library/ms998288.aspx" target="_blank">http://msdn.microsoft.com/en-us/library/ms998288.aspx</a></p>
-<h1>The tools</h1><br />
+<h2>The tools</h2><br />
 Fiddler has build-in Text-Wizard to decode the base64 encoded view state string. You can go to <strong>Inspectors</strong> - <strong>WebForms</strong> - Right click <strong>ViewState</strong> in body listview - Choose <strong>Send to Text-Wizard</strong></p>
 <p>Another online ViewState decoder: <a href="http://ignatu.co.uk/ViewStateDecoder.aspx" target="_blank">http://ignatu.co.uk/ViewStateDecoder.aspx</a></p>
-<h1>Reference</h1></p>
+<h2>Reference</h2></p>
 <p class="title"><strong>Understanding ASP.NET View State</strong></p><br />
 <a href="http://msdn.microsoft.com/library/ms972976.aspx" target="_blank">http://msdn.microsoft.com/library/ms972976.aspx</a></p>
 <p><strong>View State Security</strong></p>
