@@ -20,6 +20,8 @@ tags:
 comments: []
 ---
 
+Internet Information Services (IIS) exposes numerous configuration parameters that affect IIS performance. This topic describes several of these parameters and provides general guidance for setting the parameter values to improve IIS performance.
+
 # Reduced Security Footprint, Customized Installation Options
 
 Because IIS7 is a completely modular Web server, Administrators have complete control over the surface area of the Web server. This enables several key advantages over previous versions of IIS:
@@ -27,6 +29,8 @@ Because IIS7 is a completely modular Web server, Administrators have complete co
 - Improve performance and reduce memory footprint. By removing unused server features, Administrators can also reduce the memory usage of the server, and improve performance by reducing the amount of feature code that executes on every request to the Web application.
 
 - Build custom / specialized servers. By selecting a particular set of server features, Administrators can build custom servers that are optimized for performing a specific function within the datacenter, such as edge caching or load balancing. Administrators can add custom features to extend or replace any existing functionality using your own or third party server components built on the new extensibility APIs. The componentized architecture will provide long term benefits to the IIS community, by facilitating the development of new server features as they are needed both inside Microsoft and among third party developers.
+
+<!--more-->
 
 # Tune Application Pools through Recycling
 
@@ -160,6 +164,7 @@ Controlling the number of concurrent connection is another way to improve IIS pe
 After changing the performance settings, check the performance level of your server by gradually increasing load to a desired level. You can also consider using Google page speed tool to check whether page-loading time has been improved.
 
 # Reference
-[Optimizing IIS Performance](https://msdn.microsoft.com/en-us/library/ee377050(v=bts.70).aspx)
-[ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](http://blogs.msdn.com/b/tmarq/archive/2007/07/21/asp-net-thread-usage-on-iis-7-0-and-6-0.aspx)
+
+- [Optimizing IIS Performance](https://msdn.microsoft.com/en-us/library/ee377050(v=bts.70).aspx)
+- [ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](http://blogs.msdn.com/b/tmarq/archive/2007/07/21/asp-net-thread-usage-on-iis-7-0-and-6-0.aspx)
 
