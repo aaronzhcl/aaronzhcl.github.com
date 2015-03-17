@@ -22,7 +22,7 @@ comments: []
 
 Internet Information Services (IIS) exposes numerous configuration parameters that affect IIS performance. This topic describes several of these parameters and provides general guidance for setting the parameter values to improve IIS performance.
 
-# Reduced Security Footprint, Customized Installation Options
+## Reduced Security Footprint, Customized Installation Options
 
 Because IIS7 is a completely modular Web server, Administrators have complete control over the surface area of the Web server. This enables several key advantages over previous versions of IIS:
 
@@ -32,7 +32,7 @@ Because IIS7 is a completely modular Web server, Administrators have complete co
 
 <!--more-->
 
-# Tune Application Pools through Recycling
+## Tune Application Pools through Recycling
 
 Recycling a worker process improves the IIS’s reliability. Recycling is beneficial for faulty Web applications that memory leaks typically cause. Through recycling, the user enables IIS to periodically restart worker processes that are currently servicing an application pool. Users can configure recycling for a worker process using a number of criteria:
 
@@ -41,7 +41,7 @@ Recycling a worker process improves the IIS’s reliability. Recycling is benefi
 - After the virtual memory usage by the worker process attains a specific threshold.
 - At a specific time of the day.
 
-# Log only essential information or completely disable IIS logging
+## Log only essential information or completely disable IIS logging
 
 IIS logging should be minimized or even disabled in a production environment. To disable logging follow these steps: 
 
@@ -49,7 +49,7 @@ IIS logging should be minimized or even disabled in a production environment. To
 2. In the Connections pane, click to expand Sites, click to select the Web site for which you would like to disable logging, click to select Features View, and then double-click the Logging feature.
 3. Click Disable in the Actions pane to disable logging for this Web site.
 
-# Disable IIS ASP debugging in production environments
+## Disable IIS ASP debugging in production environments
 
 IIS ASP debugging should be disabled in a production environment. To disable IIS ASP debugging follow these steps: 
 
@@ -58,13 +58,13 @@ IIS ASP debugging should be disabled in a production environment. To disable IIS
 3. Click to expand Compilation, click to expand Debugging Properties, and verify that both Enable Client-side Debugging and Enable Server-side Debugging are set to False.
 4. If necessary, click Apply in the Actions pane.
 
-# Disable debugging for ASP.NET Applications and Web Services 
+## Disable debugging for ASP.NET Applications and Web Services 
 
 Ensure that the debug="false" on the *compilation* element in the web.config file of each and every ASP.NET application on the server. The default during development is "true" and it is a common mistake to allow this development time setting to find its way onto production servers during deployment. You don't need it set to true in production and it often leads to memory overhead and inefficiencies.
 
 For more information about what the consequence for setting debug="true", check [ASP.NET Memory: If your application is in production… then why is debug=true](http://blogs.msdn.com/b/tess/archive/2006/04/13/575364.aspx)
 
-# Tune the value of the ASP Threads Per Processor Limit property
+## Tune the value of the ASP Threads Per Processor Limit property
 
 The ASP Threads Per Processor Limit property specifies the maximum number of worker threads per processor that IIS creates. Increase the value for the Threads Per Processor Limit until the processor utilization meets at least 50 percent or above. This setting can dramatically influence the scalability of your Web applications and the performance of your server in general. Because this property defines the maximum number of ASP requests that can execute simultaneously, this setting should remain at the default value unless your ASP applications are making extended calls to external components. In this case, you may increase the value of Threads Per Processor Limit. Doing so allows the server to create more threads to handle more concurrent requests. The default value of Threads Per Processor Limit is 25. The maximum recommended value for this property is 100.
 
@@ -78,7 +78,7 @@ For more information about how to modify the properties in the &lt;limits&gt; el
 
 Note: Because this property can only be applied at the server level, modification of this property affects all Web sites that run on the server.
 
-# Tune the value of the ASP Queue Length property
+## Tune the value of the ASP Queue Length property
 
 The goal of tuning this property is to ensure good response time while minimizing how often the server sends the HTTP 503 (Server Too Busy) error to clients when the ASP request queue is full. If the value of ASP Queue Length property is too low, the server will send the HTTP 503 error with greater frequency. If the value of ASP Queue Length property is too high, users might perceive that the server is not responding when in fact their request is waiting in the queue. By watching the queue during periods of high traffic, you should discern a pattern of web request peaks and valleys. Make note of the peak value, and set the value of the ASP Queue Length property just above the peak value. Use the queue to handle short-term spikes, ensure response time, and throttle the system to avoid overload when sustained, unexpected spikes occur. If you do not have data for adjusting the ASP Queue Length property, a good starting point will be to set a one-to-one ratio of queues to total threads. For example, if the ASP Threads Per Processor Limit property is set to 25 and you have four processors (4 * 25 = 100 threads), set the ASP Queue Length property to 100 and tune from there.
 
@@ -92,15 +92,15 @@ For more information about how to modify the properties in the &lt;limits&gt; el
 
 Note: Because this property can only be applied at the server level, modification of this property affects all Web sites that run on the server.
 
-# Tune the MaxPoolThreads registry entry
+## Tune the MaxPoolThreads registry entry
 
 This setting specifies the number of pool threads to create per processor. Pool threads watch the network for requests and process incoming requests. The MaxPoolThreads count does not include threads that are consumed by ISAPI applications. Generally, you should not create more than 20 threads per processor. MaxPoolThreads is a REG_DWORD registry entry located at HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\InetInfo\Parameters\ with a default value of 4.
 
-# Disable WCF services tracing
+## Disable WCF services tracing
 
 Use the Configuration Editor Tool (SvcConfigEditor.exe) to disable WCF services tracing in a production environment. For more information about the Configuration Editor Tool, see [Configuration Editor Tool (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070).
 
-# Configure ASP.NET 2.0 MaxConcurrentRequests for IIS 7.5/7.0 Integrated mode
+## Configure ASP.NET 2.0 MaxConcurrentRequests for IIS 7.5/7.0 Integrated mode
 
 When ASP.NET 2.0 is hosted on IIS 7.5/7.0 in Integrated Mode, the use of threads is handled differently than on IIS 7.5/7.0 in Classic Mode. When ASP.NET 2.0 is hosted on IIS 7.5 in Integrated mode, ASP.NET 2.0 restricts the number of concurrently executing requests instead of the number of threads concurrently executing requests. For synchronous scenarios, this will indirectly limit the number of threads because the number of requests will be the same as the number of threads. But for asynchronous scenarios, the number of requests and threads will likely be very different because you could have far more requests than threads. When you run ASP.NET 2.0 on IIS 7.5 in integrated mode, the minFreeThreads and minLocalRequestFreeThreads of the “httpRuntime” element in the machine.config are ignored. For IIS 7.5 Integrated mode, a DWORD named MaxConcurrentRequestsPerCPU within HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0 determines the number of concurrent requests per CPU. By default, the registry key does not exist and the number of requests per CPU is limited to 12. .NET Framework 3.5 SP1 includes an update to the v2.0 binaries that supports configuring IIS application pools via the aspnet.config file. This configuration applies to integrated mode only (Classic/ISAPI mode ignores these settings).The new aspnet.config config section with default values is listed below:
 
@@ -119,13 +119,13 @@ By large number of concurrent reqests, I mean between 12 and 5000 per CPU.
 
 For more information about configuring ASP.NET Thread Usage on IIS 7.5, see [Thomas Marquardt&#39;s Blog on ASP.NET Thread Usage on IIS 7.0 ](http://go.microsoft.com/fwlink/?LinkId=157518).
 
-# Configure ASP.NET 4 MaxConcurrentRequests for IIS 7.5/7.0 Integrated mode
+## Configure ASP.NET 4 MaxConcurrentRequests for IIS 7.5/7.0 Integrated mode
 
 With .NET Framework 4, the default setting for maxConcurrentRequestsPerCPU is 5000 which is a very large number and therefore will allow plenty of asynchronous requests to execute concurrently. For more information, see [&lt;applicationPool&gt; Element ](Web Settings) (http://go.microsoft.com/fwlink/?LinkID=205339).
 
 For IIS 7.5/7.0 Integrated mode, a DWORD named MaxConcurrentRequestsPerCPU within HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0 determines the number of concurrent requests per CPU. By default, the registry key does not exist and the number of requests per CPU is limited to 5000.
 
-# Enable IIS HTTP compression
+## Enable IIS HTTP compression
 
 To more efficiently use available bandwidth, enable IIS HTTP compression. HTTP compression provides faster transmission time between compression-enabled browsers and IIS, regardless of whether your content is served from local storage or a UNC resource.
 
@@ -141,21 +141,21 @@ To configure compression at the Web site level:
 2. In the Connections pane, click to expand Sites, click to select the Web site for which you would like to configure compression, click to select Features View, and then double-click the Compression feature.
 3. Set the desired compression options and then click Apply in the Actions pane.
 
-# Configure HTTP expires header
+## Configure HTTP expires header
 
 This feature helps to minimize the number of http requests send to IIS by website visitors. HTTP expires header will help the client browser to cache webpages and its elements such as images, CSS etc.  To set http expires you need to click on HTTP response headers in the IIS, and then click on “set common headers”. Next select ‘expire web contents” and select the number of days or hours—this is total time your contents will be cached in the client’s browser.
 
-# Enable output caching
+## Enable output caching
 
 When you enable output caching, IIS will keep a copy of requested webpages. If a new user requests the very same webpage located in the cache, IIS will send the copy from its cache without reprocessing the contents. Output caching can significantly improve your server response time for dynamic contents.
 
-# Connection limits in IIS 7.5
+## Connection limits in IIS 7.5
 
 This option can give you to control the connection in three ways: controlling connection timeout, controlling maximum bandwidth per website, controlling concurrent connections.
 
 The default connection timeout for IIS 7.5 is 120 seconds, which means after this time http session will be terminated. When a user visit a page and keeps the page open for indefinite time without any activity, the IIS need to keep the connection alive—this causes IIS to spend computing resources for this connection to keep alive. For better performance, you need to keep this limit as low as possible, but not too short. For example, you can set this limit to 70 seconds. To change connection timeout you need to right click on website in IIS, and click on “manage website” .Then select “advanced settings”. Next, click on connection limits and set the value for connection timeout.
 
-# Http connection timeout in IIS
+## Http connection timeout in IIS
 
 This connection limit option will allow you to set the maximum bandwidth per second and the maximum concurrent connection per second.  The maximum allowed bandwidth make a site use only a certain amount of bandwidth per second—thus improving the performance of other sites in a shared web-hosting environment.
 
@@ -163,7 +163,7 @@ Controlling the number of concurrent connection is another way to improve IIS pe
 
 After changing the performance settings, check the performance level of your server by gradually increasing load to a desired level. You can also consider using Google page speed tool to check whether page-loading time has been improved.
 
-# Reference
+## Reference
 
 - [Optimizing IIS Performance](https://msdn.microsoft.com/en-us/library/ee377050(v=bts.70).aspx)
 - [ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](http://blogs.msdn.com/b/tmarq/archive/2007/07/21/asp-net-thread-usage-on-iis-7-0-and-6-0.aspx)
