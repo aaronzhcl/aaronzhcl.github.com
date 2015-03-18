@@ -119,12 +119,6 @@ By large number of concurrent reqests, I mean between 12 and 5000 per CPU.
 
 For more information about configuring ASP.NET Thread Usage on IIS 7.5, see [Thomas Marquardt&#39;s Blog on ASP.NET Thread Usage on IIS 7.0 ](http://go.microsoft.com/fwlink/?LinkId=157518).
 
-## Configure ASP.NET 4 MaxConcurrentRequests for IIS 7.5/7.0 Integrated mode
-
-With .NET Framework 4, the default setting for maxConcurrentRequestsPerCPU is 5000 which is a very large number and therefore will allow plenty of asynchronous requests to execute concurrently. For more information, see [&lt;applicationPool&gt; Element ](Web Settings) (http://go.microsoft.com/fwlink/?LinkID=205339).
-
-For IIS 7.5/7.0 Integrated mode, a DWORD named MaxConcurrentRequestsPerCPU within HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0 determines the number of concurrent requests per CPU. By default, the registry key does not exist and the number of requests per CPU is limited to 5000.
-
 ## Enable IIS HTTP compression
 
 To more efficiently use available bandwidth, enable IIS HTTP compression. HTTP compression provides faster transmission time between compression-enabled browsers and IIS, regardless of whether your content is served from local storage or a UNC resource.
