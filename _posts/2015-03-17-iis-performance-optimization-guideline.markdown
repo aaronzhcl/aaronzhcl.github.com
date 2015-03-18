@@ -157,8 +157,3 @@ Controlling the number of concurrent connection is another way to improve IIS pe
 
 After changing the performance settings, check the performance level of your server by gradually increasing load to a desired level. You can also consider using Google page speed tool to check whether page-loading time has been improved.
 
-## Reference
-
-- [Optimizing IIS Performance](https://msdn.microsoft.com/en-us/library/ee377050(v=bts.70).aspx)
-- [ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](http://blogs.msdn.com/b/tmarq/archive/2007/07/21/asp-net-thread-usage-on-iis-7-0-and-6-0.aspx)
-
